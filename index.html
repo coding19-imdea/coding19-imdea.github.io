@@ -1,9 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
 
+.active, .collapsible:hover {
+  background-color: #555;
+}
 
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
 h2 {
   font-family: Palatino,Palatino Linotype,Palatino LT STD,Book Antiqua,Georgia,serif; 
 }
@@ -59,9 +81,7 @@ The next morning at 12:00h CET we declare three winners (the first three that go
     <th>Active Until</th>
     <th>Description</th>
     <th>Response Form</th>
-    <th>1st Place</th>
-    <th>2nd Place</th>
-    <th>3rd Place</th>
+    <th>Submissions</th>
   </tr>
   <tr>
     <td>0</td>
@@ -69,9 +89,19 @@ The next morning at 12:00h CET we declare three winners (the first three that go
     <td><a target="_blank" href="https://projecteuler.net/problem=27">Quadratic primes
 </a></td>
     <td><a target="_blank" href="https://forms.gle/UGfwVADXZy6Pdx6u9">Submit</a></td>
-    <td>???</td>
-    <td>???</td>
-    <td>???</td>
+    <td>
+<button type="button" class="collapsible">Check Submissions </button>
+<div class="content">
+  <p><ol>
+  <li>Alejandro Naser Pastoriza: C++ </li>
+  <li>Zack Grannan: Haskell</li>
+  <li>Alejandro Aguirre: C++</li>
+  <li>Cesar Sanchez: OCAML</li>
+  <li>Matteo Campanelli: Rust </li>
+  <li>Niki: Haskell</li>
+</ol>  </p>
+</div>
+    </td>
   </tr>
 </table>
 
@@ -112,3 +142,20 @@ Is there a place to discuss the problems?
 Of course, there is the coding19 channel at IMDEA Software Mattermost. 
 </p>
 
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>

@@ -33,7 +33,7 @@ if __name__=='__main__':
             exit(1)
         lang = ext2lang[ext]
         if output_type == "nosource":
-            print(f"<li><b>{name.title()}: {lang}</b></li>")
+            print(f"<li><b>{name.title()}: <!--<a target=\"_blank\" href=\"submissions/problem1/{name}.{ext}\">-->{lang}<!--</a>--></b></li>")
         else: # Assume full
             print(f"<li><b>{name.title()}: <a target=\"_blank\" href=\"submissions/problem1/{name}.{ext}\">{lang}</a></b></li>")
 

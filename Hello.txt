@@ -1,1 +1,1 @@
-my new file contents
+This is the updated content

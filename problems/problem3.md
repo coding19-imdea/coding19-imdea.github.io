@@ -5,7 +5,7 @@
 
 ### Introduction
 
-As you may already know, it’s virus season. 
+It’s *virus* *season*, as you already know. 
 
 You may think of one specific virus that is making your days harder. Truth is, however, that there is no reason to think there will not be more bad tiny guys hanging out in the streets soon. This could make the situation worse—or not. In this problem we are going to simulate some (fictional) interaction among viruses. In this scenario, when different viruses pop up together they can either 1) create some new unexpected virus, or 2) “collide” with each other and annihilate all the virus population around. 
 

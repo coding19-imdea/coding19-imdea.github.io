@@ -58,15 +58,17 @@ if __name__=='__main__':
 
     name_ext_lst = [x.split('.') for x in part_sorted_submissions]
 
-    for name, ext in name_ext_lst:
+    for i, (name, ext) in enumerate(name_ext_lst):
         if ext not in ext2lang:
             print("Cannot find mapping for extension ." + ext + " - Please add it to mapping and try again.")
             exit(1)
         lang = ext2lang[ext]
-        if output_type == "nosource":
-            print(f"<li><b>{name.title()}: <!--<a target=\"_blank\" href=\"submissions/problem{prob_num}/{name}.{ext}\">-->{lang}<!--</a>--></b></li>")
-        else: # Assume full
-            print(f"<li><b>{name.title()}: <a target=\"_blank\" href=\"submissions/problem{prob_num}/{name}.{ext}\">{lang}</a></b></li>")
+        src_link = f"<a target=\"_blank\" href=\"submissions/problem{prob_num}/{name}.{ext}\">"
+        txt = f"{name.title()}: <!--{src_link}-->{lang}<!--</a>-->" if output_type == "nosource" else f"{name.title()}: {src_link}{lang}</a>"
+        if i < 3:
+            txt = f"<b>{txt}</b>"
+        
+        print(f"<li>{txt}</li>")
 
 
 

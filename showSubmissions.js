@@ -24,3 +24,6 @@ if (submissions[i] == undefined) {
 }
 submissions[i] = submissions[i].concat("<li>submission entry!</li>");
 */
+if (submissions[4] == undefined) {submissions[4] = "";}
+submissions[4] = submissions[4].concat(<li>Niki: <a target="_blank" href="https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem4/Niki.hs">Haskell</a></li>
+);

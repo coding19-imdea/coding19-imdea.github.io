@@ -30,3 +30,6 @@ submissions[4] = submissions[4].concat(<li>Niki: <a target="_blank" href="https:
 if (submissions[4] == undefined) {submissions[4] = "";}
 submissions[4] = submissions[4].concat(<li>Niki2: <a target="_blank" href="https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem4/Niki2.hs">Haskell</a></li>
 );
+if (submissions[4] == undefined) {submissions[4] = "";}
+submissions[4] = submissions[4].concat("<li>Niki3: <a target="_blank" href="https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem4/Niki3.hs">Haskell</a></li>"
+);

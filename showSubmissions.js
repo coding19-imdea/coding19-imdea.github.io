@@ -2,18 +2,25 @@ var submissions = [];
 
 function loadSubmissions() {
     var i;
-    console.log(submissions.length);
     for (i = 0; i < submissions.length; i++) {
-        console.log(i);
-        console.log(submissions[i]);
-        console.log("submissions"+i);
-        console.log(document.getElementById("submissions"+i));
         if (document.getElementById("submissions"+i) !== null){
          document.getElementById("submissions"+i).innerHTML = submissions[i];
     }
    }
 
   }
+
+ function showcode(i,filename,language){
+    if (i < currentSubmission) {
+        var tmp = ('<a target="_blank" href="' + filename + '>' + language +'</a>');
+        console.log("tmp = " + tmp);
+        return '<a target="_blank" href="' + filename + '">' + language +  '</a>'; 
+     }
+     else {
+        return language;
+     }
+  }
+
 
 /* Assumption: the place that submissions of problem will get 
 inserted has <div id="submissionsi"></div> */
@@ -22,10 +29,11 @@ inserted has <div id="submissionsi"></div> */
 if (submissions[i] == undefined) {
     submissions[i] = "";
 }
-submissions[i] = submissions[i].concat("<li>submission entry!</li>");
-*/if (submissions[3] == undefined) {submissions[3] = "";}
-submissions[3] = submissions[3].concat('<li>Alejandro Aguirre: <a target="_blank" href="https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem3/Alejandro Aguirre.cpp">C++</a></li>'
+submissions[i] = submissions[i].concat('<li>name: ' + showcode(i,filename,language) + '</li>');
+*/
+if (submissions[3] == undefined) {submissions[3] = "";}
+submissions[3] = submissions[3].concat('<li>Alejandro Aguirre: ' + showcode(3,"https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem3/Alejandro Aguirre.cpp", "C++") + '</li>'
 );
 if (submissions[3] == undefined) {submissions[3] = "";}
-submissions[3] = submissions[3].concat('<li>Matteo Campanelli: <a target="_blank" href="https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem3/Matteo Campanelli.py">Python</a></li>'
+submissions[3] = submissions[3].concat('<li>Matteo Campanelli: ' + showcode(3,"https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem3/Matteo%20Campanelli.py", 'Python') + '</li>'
 );

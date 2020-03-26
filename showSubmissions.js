@@ -40,3 +40,6 @@ submissions[3] = submissions[3].concat('<li>Matteo Campanelli: ' + showcode(3,"h
 if (submissions[4] == undefined) {submissions[4] = "";}
 submissions[4] = submissions[4].concat('<li>Niki: showcode(4,"https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem4/Niki.hs", "Haskell) + '</li>'
 );
+if (submissions[4] == undefined) {submissions[4] = "";}
+submissions[4] = submissions[4].concat('<li>Niki2: ' + showcode(4,"https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem4/Niki2.hs", "Haskell") + '</li>'
+);

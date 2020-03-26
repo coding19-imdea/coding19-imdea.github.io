@@ -55,3 +55,6 @@ submissions[4] = submissions[4].concat('<li>Niki: ' + showcode(4,"https://raw.gi
 if (submissions[4] == undefined) {submissions[4] = "";}
 submissions[4] = submissions[4].concat('<li>Cesar: ' + showcode(4,"https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem4/Cesar.ml", "ocaml") + '</li>'
 );
+if (submissions[4] == undefined) {submissions[4] = "";}
+submissions[4] = submissions[4].concat('<li>John Gallagher: ' + showcode(4,"https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem4/John Gallagher.pl", "Prolog") + '</li>'
+);

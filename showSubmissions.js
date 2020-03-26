@@ -47,11 +47,5 @@ if (submissions[4] == undefined) {submissions[4] = "";}
 submissions[4] = submissions[4].concat('<li>David Munuera: ' + showcode(4,"https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem4/David Munuera.hs", "Haskell") + '</li>'
 );
 if (submissions[4] == undefined) {submissions[4] = "";}
-submissions[4] = submissions[4].concat('<li>Ale Naser Pastoriza: ' + showcode(4,"https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem4/Ale Naser Pastoriza.cpp", "C++") + '</li>'
-);
-if (submissions[4] == undefined) {submissions[4] = "";}
-submissions[4] = submissions[4].concat('<li>Ale Naser Pastoriza: ' + showcode(4,"https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem4/Ale Naser Pastoriza.cpp", "C++") + '</li>'
-);
-if (submissions[4] == undefined) {submissions[4] = "";}
 submissions[4] = submissions[4].concat('<li>Ale Naser: ' + showcode(4,"https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem4/Ale Naser.cpp", "C++") + '</li>'
 );

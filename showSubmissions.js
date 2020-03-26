@@ -26,3 +26,6 @@ submissions[i] = submissions[i].concat("<li>submission entry!</li>");
 */if (submissions[3] == undefined) {submissions[3] = "";}
 submissions[3] = submissions[3].concat('<li>Alejandro Aguirre: <a target="_blank" href="https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem3/Alejandro Aguirre.cpp">C++</a></li>'
 );
+if (submissions[3] == undefined) {submissions[3] = "";}
+submissions[3] = submissions[3].concat('<li>Matteo Campanelli: <a target="_blank" href="https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem3/Matteo Campanelli.py">Python</a></li>'
+);

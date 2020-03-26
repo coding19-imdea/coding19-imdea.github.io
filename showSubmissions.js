@@ -43,3 +43,6 @@ submissions[4] = submissions[4].concat('<li>Fernando Macías: ' + showcode(4,"ht
 if (submissions[4] == undefined) {submissions[4] = "";}
 submissions[4] = submissions[4].concat('<li>Mohamed Moanis: ' + showcode(4,"https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem4/Mohamed Moanis.cc", "C++") + '</li>'
 );
+if (submissions[4] == undefined) {submissions[4] = "";}
+submissions[4] = submissions[4].concat('<li>David Munuera: ' + showcode(4,"https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem4/David Munuera.hs", "Haskell") + '</li>'
+);

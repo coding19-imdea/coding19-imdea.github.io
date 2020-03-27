@@ -1,4 +1,6 @@
-# How to add the problem i: 
+# How to add the problem `i`: 
+
+Do the below three steps after the problem `i-1` is closed and before you open problem `i`. 
 
 ## Step 1: Update the google form 
 In this [google form](https://docs.google.com/forms/d/e/1FAIpQLSdOjMebWrLTRUfTpYfd8AwvYOw65yvxv-B_DLCKahG3qng90A/viewform) update 
@@ -10,7 +12,7 @@ In this [google form](https://docs.google.com/forms/d/e/1FAIpQLSdOjMebWrLTRUfTpY
   
 This is required to 1/add the submission entries in the index.html and 2/sent the submitted source code files to the directory `submissions/problem:i/`.
 
-## Step 2: Update the google `index.html`:
+## Step 3: Update the google `index.html`:
   - Update the current [submission number](https://github.com/coding19-imdea/coding19-imdea.github.io/blob/master/index.html#L5) to `i`, 
   so that the links to source code files of all previous submissions appears in `index.html` and 
   - add a new problem row (like [this](https://github.com/coding19-imdea/coding19-imdea.github.io/blob/master/index.html#L179-L193)), 

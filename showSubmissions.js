@@ -88,3 +88,6 @@ submissions[7] = submissions[7].concat('<li>Palandjian: ' + showcode(7,"https://
 if (submissions[7] == undefined) {submissions[7] = "";}
 submissions[7] = submissions[7].concat('<li>Cesar: ' + showcode(7,"https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem7/Cesar.ml", "ocaml") + '</li>'
 );
+if (submissions[7] == undefined) {submissions[7] = "";}
+submissions[7] = submissions[7].concat('<li>Margarita: ' + showcode(7,"https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem7/Margarita.cpp", "C++") + '</li>'
+);

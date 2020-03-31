@@ -58,23 +58,6 @@ def getUpdatedHtmlStr(probName, probURL):
 
 
 
-
-
-ext2lang = {
-    'ml' : "OCaml",
-    'py' : "Python",
-    'c' : "C",
-    'cc' : "C++",
-    'cpp' : "C++",
-    'cxx' : "C++",
-    'rs' : "Rust",
-    'pl' : "Prolog",
-    'scm' : "Scheme",
-    'hs' : "Haskell",
-    'java' : "Java",
-    'go' : "Go"
-}
-
 if __name__=='__main__':
 
     if len(argv) < 3:

@@ -76,3 +76,6 @@ submissions[6] = submissions[6].concat('<li>Ale Naser Pastoriza: ' + showcode(6,
 if (submissions[6] == undefined) {submissions[6] = "";}
 submissions[6] = submissions[6].concat('<li>Cesar: ' + showcode(6,"https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem6/Cesar.ml", "ocaml") + '</li>'
 );
+if (submissions[6] == undefined) {submissions[6] = "";}
+submissions[6] = submissions[6].concat('<li>Alejandro Aguirre: ' + showcode(6,"https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem6/Alejandro Aguirre.cpp", "C++") + '</li>'
+);

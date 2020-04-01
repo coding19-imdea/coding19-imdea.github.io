@@ -4,8 +4,10 @@ Do the below three steps after the problem `i-1` is closed and before you open p
 
 ## Step 1: Update the google form 
 In this [google form](https://docs.google.com/forms/d/e/1FAIpQLSdOjMebWrLTRUfTpYfd8AwvYOw65yvxv-B_DLCKahG3qng90A/viewform) update 
-  - the title (**important** the title should be in the form e.g., "Problem 8: Problem Name", where 8 canbe any number ) and
+  - the title (the title should be e.g., "Problem 8: Problem Name", where 8 can be any number ) and
   - the response validation.
+  
+**Important:** Submissions will be sent to the directory `submissions/problem8/`, where `8` is the problem number defined in the title of the google form.   
   
 ## Step 2: trash old responses in the google form
 Go to the form, then "Responses", then remove them all.

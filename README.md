@@ -8,7 +8,7 @@ In this [google form](https://docs.google.com/forms/d/e/1FAIpQLSdOjMebWrLTRUfTpY
   - the response validation.
   
 ## Step 2: Update the google script
-  - In the same google form open the script editor and update the [problemNumber](https://github.com/coding19-imdea/coding19-imdea.github.io/blob/master/scripts/google-form.gs#L4) to `":i"`.
+  - In the same google form open the script editor and update the [problemNumber](https://github.com/coding19-imdea/coding19-imdea.github.io/blob/master/scripts/google-form.gs#L4) to `"i"`.
   
 **Important:** this update should happen in the google form script, not in this github repo!
   

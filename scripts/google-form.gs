@@ -1,8 +1,6 @@
 function onFormSubmit(e) {
 
-/* Begin Edit Area */
-var problemNumber = "i";
-/* End Edit Area */
+var problemNumber = getProblemNumber(e.source.getTitle()); // "8";
 
 
 var nameQueryIndex = 0;
@@ -107,3 +105,10 @@ var addSrcFile = UrlFetchApp.fetch("https://api.github.com/repos/coding19-imdea/
 
 
 
+
+function getProblemNumber(str){
+// str = 'Problem 6: Foo'; out = "6"
+const post = str.split(' ');
+const words = post[1].split(':');
+return (words[0]);
+}

@@ -100,3 +100,6 @@ submissions[7] = submissions[7].concat('<li>Fedor: ' + showcode(7,"https://raw.g
 if (submissions[7] == undefined) {submissions[7] = "";}
 submissions[7] = submissions[7].concat('<li>Matteo Campanelli: ' + showcode(7,"https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem7/Matteo Campanelli.py", "Python") + '</li>'
 );
+if (submissions[8] == undefined) {submissions[8] = "";}
+submissions[8] = submissions[8].concat('<li>Ignacio Cascudo: ' + showcode(8,"https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem8/Ignacio Cascudo.py", "Python") + '</li>'
+);

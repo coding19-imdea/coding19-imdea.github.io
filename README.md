@@ -14,7 +14,14 @@ In this [google form](https://docs.google.com/forms/d/e/1FAIpQLSdOjMebWrLTRUfTpY
   
 This is required to 1/add the submission entries in the index.html and 2/sent the submitted source code files to the directory `submissions/problem:i/`.
 
-## Step 3: Update the google `index.html`:
+## Step 3: trash old responses in the google form
+Go to the form, then "Responses", then remove them all.
+
+## Step 4: Update the main page `index.html`:
+**The fast way**:
+ use the `add-problem.py` script. Just run  `python3 add-problem.py [PROBLEM_NAME] [PROBLEM_URL]` from the command line, e.g. `python3 add-problem.py Sudoku "https://projecteuler.net/problem=96"`. The script automatically overwrites `index.html` (and backs it up as `index.html.bkp`).
+
+ **The other way**:
   - Update the current [submission number](https://github.com/coding19-imdea/coding19-imdea.github.io/blob/master/index.html#L5) to `i`, 
   so that the links to source code files of all previous submissions appears in `index.html` and 
   - add a new problem row (like [this](https://github.com/coding19-imdea/coding19-imdea.github.io/blob/master/index.html#L179-L193)), 

@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<script> var currentSubmission = 8 </script> <!-- NB: This line to be changed to add a problem -->
-<script src="showSubmissions.js"></script>
-
-<style>
-.collapsible {
+ <head>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <script>
+   var currentSubmission = 9
+  </script>
+  <!-- NB: This line to be changed to add a problem -->
+  <script src="showSubmissions.js">
+  </script>
+  <style>
+   .collapsible {
   background-color: #777;
   color: white;
   cursor: pointer;
@@ -60,251 +63,619 @@ td, th {
 tr:nth-child(even) {
   background-color: #dddddd;
 }
-</style>
-</head>
-<body onload="loadSubmissions()">
-<h2>Coding19</h2>
-<p>
-Solve mini daily programming challenges; have fun; win bragging rights with your peers!
+  </style>
+ </head>
+ <body onload="loadSubmissions()">
+  <h2>
+   Coding19
+  </h2>
+  <p>
+   Solve mini daily programming challenges; have fun; win bragging rights with your peers!
 Every morning at 12:30h CET we post a new small problem;
 you solve it through your favorite programming language and submit the solution.
 The next morning at 12:00h CET we declare three winners (the first three that got the correct solution).
-</p>
-
-
-
-<h2>Problems</h2>
-
-<table id="problems">
-  <tr>
-    <th>#</th>
-    <th>Active Until</th>
-    <th>Description</th>
-    <th>Response Form</th>
-    <th>Submissions</th>
-  </tr>
-
-  <!--Start Problem 0: Quadratic Primes-->
-  <tr>
-    <td>0</td> <!-- NB: Problem counter here -->
-    <td><a target="_blank" href="https://www.timeanddate.com/countdown/generic?iso=20200323T12&p0=141&font=cursive">12:00 CET, 23/03/2020</a></td>
-    <td><a target="_blank" href="https://projecteuler.net/problem=27">Quadratic primes
-</a></td>
-    <td><a target="_blank" href="https://forms.gle/UGfwVADXZy6Pdx6u9">Submit</a></td>
+  </p>
+  <h2>
+   Problems
+  </h2>
+  <table id="problems">
+   <tr>
+    <th>
+     #
+    </th>
+    <th>
+     Active Until
+    </th>
+    <th>
+     Description
+    </th>
+    <th>
+     Response Form
+    </th>
+    <th>
+     Submissions
+    </th>
+   </tr>
+   <!--Start Problem 0: Quadratic Primes-->
+   <tr>
     <td>
-<button type="button" class="collapsible">Check Submissions </button>
-<div class="content">
-  <p><ol>
-  <li>Alejandro Naser Pastoriza: <a target="_blank" href="https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem0/Pastoriza.cpp">C++</a></li>
-  <li>Zack Grannan: <a target="_blank" href="https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem0/Grannan.hs">Haskell</a></li>
-  <li>Alejandro Aguirre: <a target="_blank" href="https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem0/Aguirre.cpp">C++</a></li>
-  <li>Cesar Sanchez: OCAML</li>
-  <li>Matteo Campanelli: Rust </li>
-  <li>Niki: <a target="_blank" href="https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem0/Niki.hs">Haskell</a></li>
-  <li>Juan Cespedes: Go</li>
-  <li>Ignacio Cascudo: Python</li>
-  <li>Joakim &Ouml;hman: Haskell</li>
-</ol>  </p>
-</div>
+     0
     </td>
-  </tr>
-
-<!--Start Problem 1: Sierpinski -->
-<tr>
-  <td>1</td> <!-- NB: Problem counter here -->
-  <td><a target="_blank" href="https://www.timeanddate.com/countdown/generic?iso=20200324T12&p0=141&font=cursive">12:00 CET, 24/03/2020</a></td>
-  <td><a target="_blank" href="https://www.hackerrank.com/challenges/functions-and-fractals-sierpinski-triangles/problem">Sierpinski Triangles</a>
-  </td>
-  <td><a target="_blank" href="https://forms.gle/aq9dkARP8cqG6smx5">Submit</a></td>
-  <td>
-    <button type="button" class="collapsible">Check Submissions </button>
-    <div class="content">
-      <p><ol>
-      <li>Fedor: <a target="_blank" href="https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem1/fedor.ml">OCaml</a></li>
-      <li>John Gallagher: <a target="_blank" href="https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem1/gallagher.pl">Prolog</a></li>
-      <li>Ignacio Cascudo: <a target="_blank" href="https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem1/Ignacio.py">Python</a></li>
-      <li>Cesar: <a target="_blank" href="https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem1/Cesar.ml">OCaml</a></li>
-      <li>Isabel: <a target="_blank" href="https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem1/Isabel.pl">Prolog</a> </li>
-      <li>Alejandro Aguirre: <a target="_blank" href="https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem1/Aguirre.hs">Haskell</a></li>
-    </ol>  </p>
-    </div>  </td>
-</tr>
-<!--Start Problem 2: Coin sums -->
-<tr>
-  <td>2</td> <!-- NB: Problem counter here -->
-  <td><a target="_blank" href="https://www.timeanddate.com/countdown/generic?iso=20200325T12&p0=141&font=cursive">12:00 CET, 25/03/2020</a></td>
-  <td><a target="_blank" href="https://projecteuler.net/problem=31">Coin Sums</a>
-  </td>
-  <td><a target="_blank" href="https://forms.gle/1WqL2epD9PCZqSLQ9">Submit</a></td>
-  <td>
-    <button type="button" class="collapsible">Check Submissions </button>
-    <div class="content">
-      <p><ol>
-        <li>Nikita (12.46): <a target="_blank" href="https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem2/nikita.scm">Scheme</a></li>
-        <li>Pastoriza (12.53): <a target="_blank" href="https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem2/pastoriza.cpp">C++</a></li>
-        <li>Gallagher (12.58): <a target="_blank" href="https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem2/gallagher.pl">Prolog</a></li>
-        <li>Aguirre: <a target="_blank" href="https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem2/Aguirre.cpp">C++</a></li>
-        <li>Mohammed Moanis: <a target="_blank" href="https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem2/mohammedali.cc">C++</a></li>
-        <li>Margarita Capretto: <a target="_blank" href="https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem2/margaritacapretto.cpp">C++</a></li>
-        <li>Fernando Macias: <a target="_blank" href="https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem2/fernandomacias.go">Go</a></li>
-        <li>Cascudo: <a target="_blank" href="https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem2/cascudo.py">Python</a></li>
-        <li>Cesar Sanchez: <a target="_blank" href="https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem2/cesarsanchez.ml">OCaml</a></li>        
-        <li>Juan Cespedes: <a target="_blank" href="https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem2/juancespedes.go">Go</a></li>
-        <li>Niki Vazou: <a target="_blank" href="https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem2/niki.hs">Haskell</a></li>
-        <li>Zack Grannan: <a target="_blank" href="https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem2/grannan.hs">Haskell</a></li>
-      </ol>  </p>
-    </div>    </td>
-</tr>
-<!--Start Problem 3: The More the Merrier -->
-<tr>
-  <td>3</td> <!-- NB: Problem counter here -->
-  <td><a target="_blank" href="https://www.timeanddate.com/countdown/generic?iso=20200326T12&p0=141&font=cursive">12:00 CET, 26/03/2020</a></td>
-  <td><a target="_blank" href="https://coding19-imdea.github.io/problems/problem3.html">The More the Merrier</a>
-  </td>
-  <td><a target="_blank" href="https://forms.gle/qgV1Gc2LTwJvZyL38">Submit</a></td>
-  <td>
-    <button type="button" class="collapsible">Check Submissions</button>
-    <div class="content">
-      <p><ol> 
-        <li>Alejando Pastoriza: <a target="_blank" href="https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem3/alejando pastoriza.cpp">C++</a></li>
-        <li>Margarita: <a target="_blank" href="https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem3/margarita.cpp">C++</a></li>
-        <li>Mohamed Moanis: <a target="_blank" href="https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem3/MohamedMoanis.cc">C++</a></li>
-        <li>Cesar: <a target="_blank" href="https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem3/Cesar.ml">OCaml</a></li>
-        <li>Palandjian: <a target="_blank" href="https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem3/Palandjian.py">Python</a></li>
-        <li>Ignacio Cascudo: <a target="_blank" href="https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem3/Ignacio.py">Python</a></li>
-        <div id="submissions3"></div>
-      </ol>  </p>
-</div> </td>
-</tr>
-<!--Start Problem 4: Password Derivation-->
-<tr>
-  <td>4</td> <!-- NB: Problem counter here -->
-  <td><a target="_blank" href="https://www.timeanddate.com/countdown/generic?iso=20200327T12&p0=141&font=cursive">12:00 CET, 27/03/2020</a></td>
-  <td><a target="_blank" href="https://projecteuler.net/problem=79">Password Derivation</a>
-  </td>
-  <td><a target="_blank" href="https://forms.gle/WN183ktvGGp5E3cx7">Submit</a></td>
-  <td>
-    <button type="button" class="collapsible">Check Submissions</button>
-    <div class="content">
-      <p><ol> 
-        <div id="submissions4"></div>
-      </ol>  </p>
-</div> </td>
-</tr>
-<!--Start Problem 5: Wormholes-->
-<tr>
-  <td>5</td> <!-- NB: Problem counter here -->
-  <td><a target="_blank" href="https://www.timeanddate.com/countdown/generic?iso=20200330T12&p0=141&font=cursive">12:00 CET, 30/03/2020</a></td>
-  <td><a target="_blank" href="http://www.usaco.org/index.php?page=viewproblem2&cpid=360">Wormholes</a> <a target="_blank" href="problems/problem5-input1.in">Input1</a>  <a target="_blank" href="problems/problem5-input2.in">Input2</a> 
-  </td>
-  <td><a target="_blank" href="https://forms.gle/WN183ktvGGp5E3cx7">Submit</a></td>
-  <td>
-    <button type="button" class="collapsible">Check Submissions</button>
-    <div class="content">
-      <p><ol> 
-        <div id="submissions5"></div>
-      </ol>  </p>
-</div> </td>
-</tr>
-
-
-<!--Start Problem 6: Sudoku-->
-<tr>
-  <td>6</td> <!-- NB: Problem counter here -->
-  <td><a target="_blank" href="https://www.timeanddate.com/countdown/generic?iso=20200331T12&p0=141&font=cursive">12:00 CET, 31/03/2020</a></td>
-  <td><a target="_blank" href="https://projecteuler.net/problem=96">Sudoku</a></td>
-  <td><a target="_blank" href="https://forms.gle/8n1jTaPT9XqMyFeF9">Submit</a></td>
-  <td>
-    <button type="button" class="collapsible">Check Submissions</button>
-    <div class="content">
-      <p><ol> 
-        <div id="submissions6"></div>
-      </ol>  </p>
-</div> </td>
-</tr>
-
-<!--Start Problem 7: Reversible Numbers-->
-<tr>
-  <td>7</td> <!-- NB: Problem counter here -->
-  <td><a target="_blank" href="https://www.timeanddate.com/countdown/generic?iso=20200401T12&p0=141&font=cursive">12:00 CET, 1/04/2020</a></td>
-  <td><a target="_blank" href="https://projecteuler.net/problem=145">Reversible Numbers</a></td>
-  <td><a target="_blank" href="https://forms.gle/8n1jTaPT9XqMyFeF9">Submit</a></td>
-  <td>
-    <button type="button" class="collapsible">Check Submissions</button>
-    <div class="content">
-      <p><ol> 
-        <div id="submissions7"></div>
-      </ol>  </p>
-</div> </td>
-</tr>
-
-<!--Start Problem 8: Foolish Primes-->
-<tr>
-  <td>8</td> <!-- NB: Problem counter here -->
-  <td><a target="_blank" href="https://www.timeanddate.com/countdown/generic?iso=20200402T12&p0=141&font=cursive">12:00 CET, 2/04/2020</a></td>
-  <td><a target="_blank" href="https://projecteuler.net/problem=239">Foolish Primes</a></td>
-  <td><a target="_blank" href="https://forms.gle/8n1jTaPT9XqMyFeF9">Submit</a></td>
-  <td>
-    <button type="button" class="collapsible">Check Submissions</button>
-    <div class="content">
-      <p><ol> 
-        <div id="submissions8"></div>
-      </ol>  </p>
-</div> </td>
-</tr>
-
-
-</table>
-
-</body>
+    <!-- NB: Problem counter here -->
+    <td>
+     <a href="https://www.timeanddate.com/countdown/generic?iso=20200323T12&amp;p0=141&amp;font=cursive" target="_blank">
+      12:00 CET, 23/03/2020
+     </a>
+    </td>
+    <td>
+     <a href="https://projecteuler.net/problem=27" target="_blank">
+      Quadratic primes
+     </a>
+    </td>
+    <td>
+     <a href="https://forms.gle/UGfwVADXZy6Pdx6u9" target="_blank">
+      Submit
+     </a>
+    </td>
+    <td>
+     <button class="collapsible" type="button">
+      Check Submissions
+     </button>
+     <div class="content">
+      <p>
+       <ol>
+        <li>
+         Alejandro Naser Pastoriza:
+         <a href="https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem0/Pastoriza.cpp" target="_blank">
+          C++
+         </a>
+        </li>
+        <li>
+         Zack Grannan:
+         <a href="https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem0/Grannan.hs" target="_blank">
+          Haskell
+         </a>
+        </li>
+        <li>
+         Alejandro Aguirre:
+         <a href="https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem0/Aguirre.cpp" target="_blank">
+          C++
+         </a>
+        </li>
+        <li>
+         Cesar Sanchez: OCAML
+        </li>
+        <li>
+         Matteo Campanelli: Rust
+        </li>
+        <li>
+         Niki:
+         <a href="https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem0/Niki.hs" target="_blank">
+          Haskell
+         </a>
+        </li>
+        <li>
+         Juan Cespedes: Go
+        </li>
+        <li>
+         Ignacio Cascudo: Python
+        </li>
+        <li>
+         Joakim Öhman: Haskell
+        </li>
+       </ol>
+      </p>
+     </div>
+    </td>
+   </tr>
+   <!--Start Problem 1: Sierpinski -->
+   <tr>
+    <td>
+     1
+    </td>
+    <!-- NB: Problem counter here -->
+    <td>
+     <a href="https://www.timeanddate.com/countdown/generic?iso=20200324T12&amp;p0=141&amp;font=cursive" target="_blank">
+      12:00 CET, 24/03/2020
+     </a>
+    </td>
+    <td>
+     <a href="https://www.hackerrank.com/challenges/functions-and-fractals-sierpinski-triangles/problem" target="_blank">
+      Sierpinski Triangles
+     </a>
+    </td>
+    <td>
+     <a href="https://forms.gle/aq9dkARP8cqG6smx5" target="_blank">
+      Submit
+     </a>
+    </td>
+    <td>
+     <button class="collapsible" type="button">
+      Check Submissions
+     </button>
+     <div class="content">
+      <p>
+       <ol>
+        <li>
+         Fedor:
+         <a href="https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem1/fedor.ml" target="_blank">
+          OCaml
+         </a>
+        </li>
+        <li>
+         John Gallagher:
+         <a href="https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem1/gallagher.pl" target="_blank">
+          Prolog
+         </a>
+        </li>
+        <li>
+         Ignacio Cascudo:
+         <a href="https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem1/Ignacio.py" target="_blank">
+          Python
+         </a>
+        </li>
+        <li>
+         Cesar:
+         <a href="https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem1/Cesar.ml" target="_blank">
+          OCaml
+         </a>
+        </li>
+        <li>
+         Isabel:
+         <a href="https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem1/Isabel.pl" target="_blank">
+          Prolog
+         </a>
+        </li>
+        <li>
+         Alejandro Aguirre:
+         <a href="https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem1/Aguirre.hs" target="_blank">
+          Haskell
+         </a>
+        </li>
+       </ol>
+      </p>
+     </div>
+    </td>
+   </tr>
+   <!--Start Problem 2: Coin sums -->
+   <tr>
+    <td>
+     2
+    </td>
+    <!-- NB: Problem counter here -->
+    <td>
+     <a href="https://www.timeanddate.com/countdown/generic?iso=20200325T12&amp;p0=141&amp;font=cursive" target="_blank">
+      12:00 CET, 25/03/2020
+     </a>
+    </td>
+    <td>
+     <a href="https://projecteuler.net/problem=31" target="_blank">
+      Coin Sums
+     </a>
+    </td>
+    <td>
+     <a href="https://forms.gle/1WqL2epD9PCZqSLQ9" target="_blank">
+      Submit
+     </a>
+    </td>
+    <td>
+     <button class="collapsible" type="button">
+      Check Submissions
+     </button>
+     <div class="content">
+      <p>
+       <ol>
+        <li>
+         Nikita (12.46):
+         <a href="https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem2/nikita.scm" target="_blank">
+          Scheme
+         </a>
+        </li>
+        <li>
+         Pastoriza (12.53):
+         <a href="https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem2/pastoriza.cpp" target="_blank">
+          C++
+         </a>
+        </li>
+        <li>
+         Gallagher (12.58):
+         <a href="https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem2/gallagher.pl" target="_blank">
+          Prolog
+         </a>
+        </li>
+        <li>
+         Aguirre:
+         <a href="https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem2/Aguirre.cpp" target="_blank">
+          C++
+         </a>
+        </li>
+        <li>
+         Mohammed Moanis:
+         <a href="https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem2/mohammedali.cc" target="_blank">
+          C++
+         </a>
+        </li>
+        <li>
+         Margarita Capretto:
+         <a href="https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem2/margaritacapretto.cpp" target="_blank">
+          C++
+         </a>
+        </li>
+        <li>
+         Fernando Macias:
+         <a href="https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem2/fernandomacias.go" target="_blank">
+          Go
+         </a>
+        </li>
+        <li>
+         Cascudo:
+         <a href="https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem2/cascudo.py" target="_blank">
+          Python
+         </a>
+        </li>
+        <li>
+         Cesar Sanchez:
+         <a href="https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem2/cesarsanchez.ml" target="_blank">
+          OCaml
+         </a>
+        </li>
+        <li>
+         Juan Cespedes:
+         <a href="https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem2/juancespedes.go" target="_blank">
+          Go
+         </a>
+        </li>
+        <li>
+         Niki Vazou:
+         <a href="https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem2/niki.hs" target="_blank">
+          Haskell
+         </a>
+        </li>
+        <li>
+         Zack Grannan:
+         <a href="https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem2/grannan.hs" target="_blank">
+          Haskell
+         </a>
+        </li>
+       </ol>
+      </p>
+     </div>
+    </td>
+   </tr>
+   <!--Start Problem 3: The More the Merrier -->
+   <tr>
+    <td>
+     3
+    </td>
+    <!-- NB: Problem counter here -->
+    <td>
+     <a href="https://www.timeanddate.com/countdown/generic?iso=20200326T12&amp;p0=141&amp;font=cursive" target="_blank">
+      12:00 CET, 26/03/2020
+     </a>
+    </td>
+    <td>
+     <a href="https://coding19-imdea.github.io/problems/problem3.html" target="_blank">
+      The More the Merrier
+     </a>
+    </td>
+    <td>
+     <a href="https://forms.gle/qgV1Gc2LTwJvZyL38" target="_blank">
+      Submit
+     </a>
+    </td>
+    <td>
+     <button class="collapsible" type="button">
+      Check Submissions
+     </button>
+     <div class="content">
+      <p>
+       <ol>
+        <li>
+         Alejando Pastoriza:
+         <a href="https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem3/alejando pastoriza.cpp" target="_blank">
+          C++
+         </a>
+        </li>
+        <li>
+         Margarita:
+         <a href="https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem3/margarita.cpp" target="_blank">
+          C++
+         </a>
+        </li>
+        <li>
+         Mohamed Moanis:
+         <a href="https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem3/MohamedMoanis.cc" target="_blank">
+          C++
+         </a>
+        </li>
+        <li>
+         Cesar:
+         <a href="https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem3/Cesar.ml" target="_blank">
+          OCaml
+         </a>
+        </li>
+        <li>
+         Palandjian:
+         <a href="https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem3/Palandjian.py" target="_blank">
+          Python
+         </a>
+        </li>
+        <li>
+         Ignacio Cascudo:
+         <a href="https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem3/Ignacio.py" target="_blank">
+          Python
+         </a>
+        </li>
+        <div id="submissions3">
+        </div>
+       </ol>
+      </p>
+     </div>
+    </td>
+   </tr>
+   <!--Start Problem 4: Password Derivation-->
+   <tr>
+    <td>
+     4
+    </td>
+    <!-- NB: Problem counter here -->
+    <td>
+     <a href="https://www.timeanddate.com/countdown/generic?iso=20200327T12&amp;p0=141&amp;font=cursive" target="_blank">
+      12:00 CET, 27/03/2020
+     </a>
+    </td>
+    <td>
+     <a href="https://projecteuler.net/problem=79" target="_blank">
+      Password Derivation
+     </a>
+    </td>
+    <td>
+     <a href="https://forms.gle/WN183ktvGGp5E3cx7" target="_blank">
+      Submit
+     </a>
+    </td>
+    <td>
+     <button class="collapsible" type="button">
+      Check Submissions
+     </button>
+     <div class="content">
+      <p>
+       <ol>
+        <div id="submissions4">
+        </div>
+       </ol>
+      </p>
+     </div>
+    </td>
+   </tr>
+   <!--Start Problem 5: Wormholes-->
+   <tr>
+    <td>
+     5
+    </td>
+    <!-- NB: Problem counter here -->
+    <td>
+     <a href="https://www.timeanddate.com/countdown/generic?iso=20200330T12&amp;p0=141&amp;font=cursive" target="_blank">
+      12:00 CET, 30/03/2020
+     </a>
+    </td>
+    <td>
+     <a href="http://www.usaco.org/index.php?page=viewproblem2&amp;cpid=360" target="_blank">
+      Wormholes
+     </a>
+     <a href="problems/problem5-input1.in" target="_blank">
+      Input1
+     </a>
+     <a href="problems/problem5-input2.in" target="_blank">
+      Input2
+     </a>
+    </td>
+    <td>
+     <a href="https://forms.gle/WN183ktvGGp5E3cx7" target="_blank">
+      Submit
+     </a>
+    </td>
+    <td>
+     <button class="collapsible" type="button">
+      Check Submissions
+     </button>
+     <div class="content">
+      <p>
+       <ol>
+        <div id="submissions5">
+        </div>
+       </ol>
+      </p>
+     </div>
+    </td>
+   </tr>
+   <!--Start Problem 6: Sudoku-->
+   <tr>
+    <td>
+     6
+    </td>
+    <!-- NB: Problem counter here -->
+    <td>
+     <a href="https://www.timeanddate.com/countdown/generic?iso=20200331T12&amp;p0=141&amp;font=cursive" target="_blank">
+      12:00 CET, 31/03/2020
+     </a>
+    </td>
+    <td>
+     <a href="https://projecteuler.net/problem=96" target="_blank">
+      Sudoku
+     </a>
+    </td>
+    <td>
+     <a href="https://forms.gle/8n1jTaPT9XqMyFeF9" target="_blank">
+      Submit
+     </a>
+    </td>
+    <td>
+     <button class="collapsible" type="button">
+      Check Submissions
+     </button>
+     <div class="content">
+      <p>
+       <ol>
+        <div id="submissions6">
+        </div>
+       </ol>
+      </p>
+     </div>
+    </td>
+   </tr>
+   <!--Start Problem 7: Reversible Numbers-->
+   <tr>
+    <td>
+     7
+    </td>
+    <!-- NB: Problem counter here -->
+    <td>
+     <a href="https://www.timeanddate.com/countdown/generic?iso=20200401T12&amp;p0=141&amp;font=cursive" target="_blank">
+      12:00 CET, 1/04/2020
+     </a>
+    </td>
+    <td>
+     <a href="https://projecteuler.net/problem=145" target="_blank">
+      Reversible Numbers
+     </a>
+    </td>
+    <td>
+     <a href="https://forms.gle/8n1jTaPT9XqMyFeF9" target="_blank">
+      Submit
+     </a>
+    </td>
+    <td>
+     <button class="collapsible" type="button">
+      Check Submissions
+     </button>
+     <div class="content">
+      <p>
+       <ol>
+        <div id="submissions7">
+        </div>
+       </ol>
+      </p>
+     </div>
+    </td>
+   </tr>
+   <!--Start Problem 8: Foolish Primes-->
+   <tr>
+    <td>
+     8
+    </td>
+    <!-- NB: Problem counter here -->
+    <td>
+     <a href="https://www.timeanddate.com/countdown/generic?iso=20200402T12&amp;p0=141&amp;font=cursive" target="_blank">
+      12:00 CET, 2/04/2020
+     </a>
+    </td>
+    <td>
+     <a href="https://projecteuler.net/problem=239" target="_blank">
+      Foolish Primes
+     </a>
+    </td>
+    <td>
+     <a href="https://forms.gle/8n1jTaPT9XqMyFeF9" target="_blank">
+      Submit
+     </a>
+    </td>
+    <td>
+     <button class="collapsible" type="button">
+      Check Submissions
+     </button>
+     <div class="content">
+      <p>
+       <ol>
+        <div id="submissions8">
+        </div>
+       </ol>
+      </p>
+     </div>
+    </td>
+   </tr>
+   <!--Start Problem 9: Stacks of Flapjacks-->
+   <tr>
+    <td>
+     9
+    </td>
+    <!-- NB: Problem counter here -->
+    <td>
+     <a href="https://www.timeanddate.com/countdown/generic?iso=20200403T12&amp;p0=141&amp;font=cursive" target="_blank">
+      12:00 CET, 03/04/03
+     </a>
+    </td>
+    <td>
+     <a href="https://onlinejudge.org/index.php?option=onlinejudge&amp;Itemid=8&amp;page=show_problem&amp;problem=56" target="_blank">
+      Stacks of Flapjacks
+     </a>
+     <a href="problems/problem9.in" target="_blank">
+      Input
+     </a>
+    </td>
+    <td>
+     <a href="https://forms.gle/8n1jTaPT9XqMyFeF9" target="_blank">
+      Submit
+     </a>
+    </td>
+    <td>
+     <button class="collapsible" type="button">
+      Check Submissions
+     </button>
+     <div class="content">
+      <p>
+       <ol>
+        <div id="submissions9">
+        </div>
+       </ol>
+      </p>
+     </div>
+    </td>
+   </tr>
+  </table>
+ </body>
 </html>
-
-
-<h2>FAQ</h2>
-
+<h2>
+ FAQ
+</h2>
 <h4>
-Can I suggest a problem? 
+ Can I suggest a problem?
 </h4>
 <p>
-Of course, use this <a target="_blank" href="https://forms.gle/sYA5wA2FQS7T29C2A">google form</a>  to suggest a new problem. 
+ Of course, use this
+ <a href="https://forms.gle/sYA5wA2FQS7T29C2A" target="_blank">
+  google form
+ </a>
+ to suggest a new problem. 
 Just make sure that if you copied or edited the problem from a different source, 
 your suggestion complies with the source's copyright regulations.
 </p>
-
 <h4>
-What time are you going to post the problems and how?
+ What time are you going to post the problems and how?
 </h4>
 <p>
-We will post the problem in this webpage every weekday morning at 12:30h CET. 
+ We will post the problem in this webpage every weekday morning at 12:30h CET.
 </p>
-
-
 <h4>
-How do I submit my response and when?
+ How do I submit my response and when?
 </h4>
 <p>
-When you have your response you can submit it using the google form link in the table above. 
+ When you have your response you can submit it using the google form link in the table above.
 </p>
-
-
 <h4>
-Do I have to submit the source code of my solution? 
+ Do I have to submit the source code of my solution?
 </h4>
 <p>
-Yes! For educational purposes we will post the source code of the three winning solutions. If you don't post your code you cannot be one of the three winners! 
+ Yes! For educational purposes we will post the source code of the three winning solutions. If you don't post your code you cannot be one of the three winners!
 </p>
-
-
 <h4>
-Is there a place to discuss the problems?
+ Is there a place to discuss the problems?
 </h4>
 <p>
-Of course, there is the coding19 channel at IMDEA Software Mattermost. 
+ Of course, there is the coding19 channel at IMDEA Software Mattermost.
 </p>
-
-
 <script>
-var coll = document.getElementsByClassName("collapsible");
+ var coll = document.getElementsByClassName("collapsible");
 var i;
 
 for (i = 0; i < coll.length; i++) {

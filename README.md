@@ -14,10 +14,9 @@ Go to the form, then "Responses", then remove them all.
 
 ## Step 3: Update the main page `index.html`:
 **The fast way**:
- use the `add-problem.py` script. Just run  `python3 add-problem.py [PROBLEM_NAME] [PROBLEM_URL]` from the command line, e.g. `python3 add-problem.py Sudoku "https://projecteuler.net/problem=96"`. The script automatically overwrites `index.html` (and backs it up as `index.html.bkp`).
+ use the `add-problem.py` script. Just run  `python3 add-problem.py [PROBLEM_NAME] [PROBLEM_URL] [PROBLEM_SOL]` from the command line, e.g. `python3 add-problem.py Sudoku "https://projecteuler.net/problem=96" 24702`. The script automatically overwrites `index.html` (and backs it up as `index.html.bkp`).
 
  **The other way**:
-  - Update the current [submission number](https://github.com/coding19-imdea/coding19-imdea.github.io/blob/master/index.html#L5) to `i`, 
-  so that the links to source code files of all previous submissions appears in `index.html` and 
-  - add a new problem row (like [this](https://github.com/coding19-imdea/coding19-imdea.github.io/blob/master/index.html#L179-L193)), 
-  the new submissions will appear inside the `<div id="submissions:i"></div>` element. 
+  - Update the current [submission number](https://github.com/coding19-imdea/coding19-imdea.github.io/blob/master/index.html#L6) to `i`, 
+  so that the links to source code files of all previous submissions appears in `index.html` and  
+  - add a new problem row (like [this](https://github.com/coding19-imdea/coding19-imdea.github.io/blob/master/index.html#L444-L480)). The row should containt a `<div id="submissions:i"></div>` element that will include the submissions and an `<div id="solution:i" value="sol"></div>` element that will be replaced by a reveal solution button. 

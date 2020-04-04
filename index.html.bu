@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <script>
+   var currentSubmission = 10
+  </script>
+  <!-- NB: This line to be changed to add a problem -->
+  <script src="showSubmissions.js">
+  </script>
+  <style>
+   .collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 9px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+.solution {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 9px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+h2 {
+  font-family: Palatino,Palatino Linotype,Palatino LT STD,Book Antiqua,Georgia,serif; 
+}
+
+h3 {
+  font-family: Palatino,Palatino Linotype,Palatino LT STD,Book Antiqua,Georgia,serif; 
+}
+
+h4 {
+  font-family: Palatino,Palatino Linotype,Palatino LT STD,Book Antiqua,Georgia,serif; 
+}
+
+
+p {
+  font-family: Palatino,Palatino Linotype,Palatino LT STD,Book Antiqua,Georgia,serif; 
+}
+
+table {
+  font-family: Palatino,Palatino Linotype,Palatino LT STD,Book Antiqua,Georgia,serif; 
+  border-collapse: collapse;
+}
+
+td, th {
+  font-family: Palatino,Palatino Linotype,Palatino LT STD,Book Antiqua,Georgia,serif; 
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+  </style>
+ </head>
+ <body onload="loadSubmissions()">
+  <h2>
+   Coding19
+  </h2>
+  <p>
+   Solve mini daily programming challenges; have fun; win bragging rights with your peers!
+Every morning at 12:30h CET we post a new small problem;
+you solve it through your favorite programming language and submit the solution.
+The next morning at 12:00h CET we declare three winners (the first three that got the correct solution).
+  </p>
+  <h2>
+   Problems
+  </h2>
+  <table id="problems">
+   <tr>
+    <th>
+     #
+    </th>
+    <th>
+     Active Until
+    </th>
+    <th>
+     Description
+    </th>
+    <th>
+      Solution
+    </th>
+    <th>
+     Submissions
+    </th>
+   </tr>
+   <!--Start Problem 0: Quadratic Primes-->
+   <tr>
+    <td>
+     0
+    </td>
+    <!-- NB: Problem counter here -->
+    <td>
+     <a href="https://www.timeanddate.com/countdown/generic?iso=20200323T12&amp;p0=141&amp;font=cursive" target="_blank">
+      12:00 CET, 23/03/2020
+     </a>
+    </td>
+    <td>
+     <a href="https://projecteuler.net/problem=27" target="_blank">
+      Quadratic primes
+     </a>
+    </td>
+     <td>
+      <div id="solution0" value="-59231"></div>
+     </td>
+     <td>
+     <button class="collapsible" type="button">
+      Check Submissions
+     </button>
+     <div class="content">
+      <p>
+       <ol>
+        <div id="submissions0"></div>
+       </ol>
+      </p>
+     </div>
+    </td>
+   </tr>
+   <!--Start Problem 1: Sierpinski -->
+   <tr>
+    <td>
+     1
+    </td>
+    <!-- NB: Problem counter here -->
+    <td>
+     <a href="https://www.timeanddate.com/countdown/generic?iso=20200324T12&amp;p0=141&amp;font=cursive" target="_blank">
+      12:00 CET, 24/03/2020
+     </a>
+    </td>
+    <td>
+     <a href="https://www.hackerrank.com/challenges/functions-and-fractals-sierpinski-triangles/problem" target="_blank">
+      Sierpinski Triangles
+     </a>
+    </td>
+    <td>
+      <div id="solution1" value="N/A"></div>
+     </td>
+    <td>
+     <button class="collapsible" type="button">
+      Check Submissions
+     </button>
+     <div class="content">
+      <p>
+       <ol>
+         <div id="submissions1"></div>
+       </ol>
+      </p>
+     </div>
+    </td>
+   </tr>
+   <!--Start Problem 2: Coin sums -->
+   <tr>
+    <td>
+     2
+    </td>
+    <!-- NB: Problem counter here -->
+    <td>
+     <a href="https://www.timeanddate.com/countdown/generic?iso=20200325T12&amp;p0=141&amp;font=cursive" target="_blank">
+      12:00 CET, 25/03/2020
+     </a>
+    </td>
+    <td>
+     <a href="https://projecteuler.net/problem=31" target="_blank">
+      Coin Sums
+     </a>
+    </td>
+    <td>
+      <div id="solution2" value="73682"></div>
+    </td>
+    <td>
+     <button class="collapsible" type="button">
+      Check Submissions
+     </button>
+     <div class="content">
+      <p>
+       <ol><div id="submissions2"></div>
+      </p>
+    </td>
+   </tr>
+   <!--Start Problem 3: The More the Merrier -->
+   <tr>
+    <td>
+     3
+    </td>
+    <!-- NB: Problem counter here -->
+    <td>
+     <a href="https://www.timeanddate.com/countdown/generic?iso=20200326T12&amp;p0=141&amp;font=cursive" target="_blank">
+      12:00 CET, 26/03/2020
+     </a>
+    </td>
+    <td>
+     <a href="https://coding19-imdea.github.io/problems/problem3.html" target="_blank">
+      The More the Merrier
+     </a>
+    </td>
+    <td>
+      <div id="solution3" value="740">
+      </div>
+    </td>
+    <td>
+     <button class="collapsible" type="button">
+      Check Submissions
+     </button>
+     <div class="content">
+      <p>
+       <ol>
+        <div id="submissions3">
+        </div>
+       </ol>
+      </p>
+     </div>
+    </td>
+   </tr>
+   <!--Start Problem 4: Password Derivation-->
+   <tr>
+    <td>
+     4
+    </td>
+    <!-- NB: Problem counter here -->
+    <td>
+     <a href="https://www.timeanddate.com/countdown/generic?iso=20200327T12&amp;p0=141&amp;font=cursive" target="_blank">
+      12:00 CET, 27/03/2020
+     </a>
+    </td>
+    <td>
+     <a href="https://projecteuler.net/problem=79" target="_blank">
+      Password Derivation
+     </a>
+    </td>
+    <td>      
+      <div id="solution4" value="73162890"></div>
+    </td>
+    <td>
+     <button class="collapsible" type="button">
+      Check Submissions
+     </button>
+     <div class="content">
+      <p>
+       <ol>
+        <div id="submissions4">
+        </div>
+       </ol>
+      </p>
+     </div>
+    </td>
+   </tr>
+   <!--Start Problem 5: Wormholes-->
+   <tr>
+    <td>
+     5
+    </td>
+    <!-- NB: Problem counter here -->
+    <td>
+     <a href="https://www.timeanddate.com/countdown/generic?iso=20200330T12&amp;p0=141&amp;font=cursive" target="_blank">
+      12:00 CET, 30/03/2020
+     </a>
+    </td>
+    <td>
+     <a href="http://www.usaco.org/index.php?page=viewproblem2&amp;cpid=360" target="_blank">
+      Wormholes
+     </a>
+     <a href="problems/problem5-input1.in" target="_blank">
+      Input1
+     </a>
+     <a href="problems/problem5-input2.in" target="_blank">
+      Input2
+     </a>
+    </td>
+    <td>
+      <div id="solution5" value="N/A"></div>
+    </td>
+    <td>
+     <button class="collapsible" type="button">
+      Check Submissions
+     </button>
+     <div class="content">
+      <p>
+       <ol>
+        <div id="submissions5">
+        </div>
+       </ol>
+      </p>
+     </div>
+    </td>
+   </tr>
+   <!--Start Problem 6: Sudoku-->
+   <tr>
+    <td>
+     6
+    </td>
+    <!-- NB: Problem counter here -->
+    <td>
+     <a href="https://www.timeanddate.com/countdown/generic?iso=20200331T12&amp;p0=141&amp;font=cursive" target="_blank">
+      12:00 CET, 31/03/2020
+     </a>
+    </td>
+    <td>
+     <a href="https://projecteuler.net/problem=96" target="_blank">
+      Sudoku
+     </a>
+    </td>
+    <td>
+      <div id="solution6" value="24702"></div>
+    </td>
+    <td>
+     <button class="collapsible" type="button">
+      Check Submissions
+     </button>
+     <div class="content">
+      <p>
+       <ol>
+        <div id="submissions6">
+        </div>
+       </ol>
+      </p>
+     </div>
+    </td>
+   </tr>
+   <!--Start Problem 7: Reversible Numbers-->
+   <tr>
+    <td>
+     7
+    </td>
+    <!-- NB: Problem counter here -->
+    <td>
+     <a href="https://www.timeanddate.com/countdown/generic?iso=20200401T12&amp;p0=141&amp;font=cursive" target="_blank">
+      12:00 CET, 01/04/2020
+     </a>
+    </td>
+    <td>
+     <a href="https://projecteuler.net/problem=145" target="_blank">
+      Reversible Numbers
+     </a>
+    </td>
+    <td>
+      <div id="solution7" value="608720"></div>
+    </td>
+    <td>
+     <button class="collapsible" type="button">
+      Check Submissions
+     </button>
+     <div class="content">
+      <p>
+       <ol>
+        <div id="submissions7">
+        </div>
+       </ol>
+      </p>
+     </div>
+    </td>
+   </tr>
+   <!--Start Problem 8: Foolish Primes-->
+   <tr>
+    <td>
+     8
+    </td>
+    <!-- NB: Problem counter here -->
+    <td>
+     <a href="https://www.timeanddate.com/countdown/generic?iso=20200402T12&amp;p0=141&amp;font=cursive" target="_blank">
+      12:00 CET, 02/04/2020
+     </a>
+    </td>
+    <td>
+     <a href="https://projecteuler.net/problem=239" target="_blank">
+      Foolish Primes
+     </a>
+    </td>
+    <td>
+      <div id="solution8" value="0.001887854841"></div>
+    </td>
+    <td>
+     <button class="collapsible" type="button">
+      Check Submissions
+     </button>
+     <div class="content">
+      <p>
+       <ol>
+        <div id="submissions8">
+        </div>
+       </ol>
+      </p>
+     </div>
+    </td>
+   </tr>
+   <!--Start Problem 9: Stacks of Flapjacks-->
+   <tr>
+    <td>
+     9
+    </td>
+    <!-- NB: Problem counter here -->
+    <td>
+     <a href="https://www.timeanddate.com/countdown/generic?iso=20200403T12&amp;p0=141&amp;font=cursive" target="_blank">
+      12:00 CET, 03/04/03
+     </a>
+    </td>
+    <td>
+     <a href="https://onlinejudge.org/index.php?option=onlinejudge&amp;Itemid=8&amp;page=show_problem&amp;problem=56" target="_blank">
+      Stacks of Flapjacks
+     </a>
+     <a href="problems/problem9.in" target="_blank">
+      Input
+     </a>
+    </td>
+    <td>      
+      <div id="solution9" value="N/A"></div>
+    </td>
+    <td>
+     <button class="collapsible" type="button">
+      Check Submissions
+     </button>
+     <div class="content">
+      <p>
+       <ol>
+        <div id="submissions9">
+        </div>
+       </ol>
+      </p>
+     </div>
+    </td>
+   </tr>
+   <!--Start Problem 10: Casa de Papel-->
+   <tr>
+    <td>
+     10
+    </td>
+    <!-- NB: Problem counter here -->
+    <td>
+     <a href="https://www.timeanddate.com/countdown/generic?iso=20200406T12&amp;p0=141&amp;font=cursive" target="_blank">
+      12:00 CET, 06/04/04
+     </a>
+    </td>
+    <td>
+     <a href="https://coding19-imdea.github.io/problems/problem10.html" target="_blank">
+      Casa de Papel
+     </a>
+    </td>
+    <td>
+      <div id="solution10" value="193193965">
+       <a href="https://forms.gle/8n1jTaPT9XqMyFeF9" target="_blank">
+        Submit
+       </a>
+    </div>
+    </td>
+    <td>
+     <button class="collapsible" type="button">
+      Check Submissions
+     </button>
+     <div class="content">
+      <p>
+       <ol>
+        <div id="submissions10">
+        </div>
+       </ol>
+      </p>
+     </div>
+    </td>
+   </tr>
+  </table>
+ </body>
+</html>
+<h2>
+ FAQ
+</h2>
+<h4>
+ Can I suggest a problem?
+</h4>
+<p>
+ Of course, use this
+ <a href="https://forms.gle/sYA5wA2FQS7T29C2A" target="_blank">
+  google form
+ </a>
+ to suggest a new problem. 
+Just make sure that if you copied or edited the problem from a different source, 
+your suggestion complies with the source's copyright regulations.
+</p>
+<h4>
+ What time are you going to post the problems and how?
+</h4>
+<p>
+ We will post the problem in this webpage every weekday morning at 12:30h CET.
+</p>
+<h4>
+ How do I submit my response and when?
+</h4>
+<p>
+ When you have your response you can submit it using the google form link in the table above.
+</p>
+<h4>
+ Do I have to submit the source code of my solution?
+</h4>
+<p>
+ Yes! For educational purposes we will post the source code of the three winning solutions. If you don't post your code you cannot be one of the three winners!
+</p>
+<h4>
+ Is there a place to discuss the problems?
+</h4>
+<p>
+ Of course, there is the coding19 channel at IMDEA Software Mattermost.
+</p>
+<script>
+function makehtmlsolution(i, sol){
+    var content = '<button class="solution" type="button" onclick="revealSolution(';
+    content = content.concat(i);
+    content = content.concat(', \'');
+    content = content.concat(sol);
+    content = content.concat('\')"> Reveal Solution</button>');
+    return content;
+}
+
+function revealSolution(i,sol) {
+    var elem = "solution".concat(i.toString());
+    document.getElementById(elem).innerHTML = sol;
+}
+
+for (i = 0; i < currentSubmission; i++) {
+  var elem = document.getElementById("solution".concat(i.toString()));
+  var sol  = elem.getAttribute('value');
+  var content = makehtmlsolution(i,sol);
+  elem.innerHTML = content;
+}
+
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>

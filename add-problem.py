@@ -52,7 +52,7 @@ def getUpdatedHtmlStr(probName, probURL,probSol):
     deadlineStrs = get_deadline_strs()
     formattedTrStr = get_tr_str(probName, probURL, probSol, curSubmNum, deadlineStrs[0], deadlineStrs[1])
     newTr = BeautifulSoup(formattedTrStr, "html.parser")
-    probsTbl.append(newTr)
+    probsTbl.insert(2,newTr)
 
     return soup.prettify()
 

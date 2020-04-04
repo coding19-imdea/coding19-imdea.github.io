@@ -5,7 +5,7 @@ import re
 import datetime
 import shutil
 
-def get_tr_str(probName, probURL, curSubmNum, deadlineStrLnk, deadlineStrUser):
+def get_tr_str(probName, probURL, probSol, curSubmNum, deadlineStrLnk, deadlineStrUser):
     return \
         f"""
         <!--Start Problem {curSubmNum}: {probName}-->
@@ -13,7 +13,7 @@ def get_tr_str(probName, probURL, curSubmNum, deadlineStrLnk, deadlineStrUser):
         <td>{curSubmNum}</td> <!-- NB: Problem counter here -->
         <td><a href="https://www.timeanddate.com/countdown/generic?iso={deadlineStrLnk}&amp;p0=141&amp;font=cursive" target="_blank">{deadlineStrUser}</a></td>
         <td><a href="{probURL}" target="_blank">{probName}</a></td>
-        <td><a href="https://forms.gle/8n1jTaPT9XqMyFeF9" target="_blank">Submit</a></td>
+        <td><div id="solution{curSubmNum}" value="{probSol}"><a href="https://forms.gle/8n1jTaPT9XqMyFeF9" target="_blank">Submit</a></div></td>
         <td>
         <button class="collapsible" type="button">Check Submissions</button>
         <div class="content">
@@ -33,7 +33,7 @@ def get_deadline_strs():
     deadlineDate = todayDate + datetime.timedelta(days=delta)
     return (deadlineDate.strftime("%Y%m%d") + "T12", "12:00 CET, " + deadlineDate.strftime("%d/%m/%d"))
 
-def getUpdatedHtmlStr(probName, probURL):
+def getUpdatedHtmlStr(probName, probURL,probSol):
     html_doc = open('index.html').read()
     soup = BeautifulSoup(html_doc, 'html.parser')
 
@@ -50,7 +50,7 @@ def getUpdatedHtmlStr(probName, probURL):
     probsTbl = soup.find("table", {'id':'problems'})
 
     deadlineStrs = get_deadline_strs()
-    formattedTrStr = get_tr_str(probName, probURL, curSubmNum, deadlineStrs[0], deadlineStrs[1])
+    formattedTrStr = get_tr_str(probName, probURL, probSol, curSubmNum, deadlineStrs[0], deadlineStrs[1])
     newTr = BeautifulSoup(formattedTrStr, "html.parser")
     probsTbl.append(newTr)
 
@@ -66,8 +66,9 @@ if __name__=='__main__':
 
     probName = argv[1]
     probUrl = argv[2]
+    probSol = argv[3]
 
-    new_html = getUpdatedHtmlStr(probName, probUrl)
+    new_html = getUpdatedHtmlStr(probName, probUrl,probSol)
 
     # Backup index.html
     shutil.copyfile('index.html', 'index.html.bkp')

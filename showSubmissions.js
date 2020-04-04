@@ -31,6 +31,52 @@ if (submissions[i] == undefined) {
 }
 submissions[i] = submissions[i].concat('<li>name: ' + showcode(i,filename,language) + '</li>');
 */
+submissions[0] = '<li>Alejandro Naser Pastoriza: ' + showcode(0,"https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem0/Pastoriza.cpp", "C++") + '</li>';
+submissions[0] = submissions[0].concat('<li>Zack Grannan: ' + showcode(0,"https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem0/Grannan.hs", "Haskell") + '</li>');
+submissions[0] = submissions[0].concat('<li>Alejandro Aguirre: ' + showcode(0,"https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem0/Aguirre.cpp", "C++") + '</li>');
+submissions[0] = submissions[0].concat('<li>Cesar Sanchez: OCAML </li>');
+submissions[0] = submissions[0].concat('<li>Matteo Campanelli: Rust </li>');
+submissions[0] = submissions[0].concat('<li>Niki: Haskell </li>');
+submissions[0] = submissions[0].concat('<li>Juan Cespedes: Go </li>');
+submissions[0] = submissions[0].concat('<li>Ignacio Cascudo: Python </li>');
+submissions[0] = submissions[0].concat('<li>Joakim \u00d6hman: Haskell</li>');
+submissions[1] = '<li>Fedor: ' + showcode(1,"https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem1/fedor.ml", "OCaml") + '</li>';
+submissions[1] = submissions[1].concat('<li>John Gallagher: ' + showcode(1,"https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem1/gallagher.pl", "Prolog") + '</li>');
+submissions[1] = submissions[1].concat('<li>Ignacio Cascudo: ' + showcode(1,"https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem1/Ignacio.py", "Python") + '</li>');
+submissions[1] = submissions[1].concat('<li>Cesar: ' + showcode(1,"https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem1/Cesar.ml", "OCaml") + '</li>');
+submissions[1] = submissions[1].concat('<li>Isabel: ' + showcode(1,"https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem1/Isabel.pl", "Prolog") + '</li>');
+submissions[1] = submissions[1].concat('<li>Alejandro Aguirre ' + showcode(1,"https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem1/Aguirre.hs", "Haskell") + '</li>');
+submissions[2] = '<li>Nikita (12.46): ' + showcode(2,"https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem2/nikita.scm", "Scheme") + '</li>';
+submissions[2] = submissions[2].concat('<li>Pastoriza (12.53): ' + showcode(2,"https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem2/pastoriza.cpp", "C++") + '</li>');
+submissions[2] = submissions[2].concat('<li>Gallagher (12.58): ' + showcode(2,"https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem2/gallagher.pl", "Prolog") + '</li>');
+submissions[2] = submissions[2].concat('<li>Aguirre: ' + showcode(2,"https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem2/Aguirre.cpp", "C++") + '</li>');
+submissions[2] = submissions[2].concat('<li>Mohammed Moanis: ' + showcode(2,"https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem2/mohammedali.cc", "C++") + '</li>');
+submissions[2] = submissions[2].concat('<li>Margarita Capretto: ' + showcode(2,"https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem2/margaritacapretto.cpp", "C++") + '</li>');
+submissions[2] = submissions[2].concat('<li>Fernando Macias: ' + showcode(2,"https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem2/fernandomacias.go", "Go") + '</li>');
+submissions[2] = submissions[2].concat('<li>Cascudo: ' + showcode(2,"https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem2/cascudo.py", "Python") + '</li>');
+submissions[2] = submissions[2].concat('<li>Cesar Sanchez: ' + showcode(2,"https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem2/cesarsanchez.ml", "OCaml") + '</li>');
+submissions[2] = submissions[2].concat('<li>Juan Cespedes: ' + showcode(2,"https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem2/juancespedes.go", "Go") + '</li>');
+submissions[2] = submissions[2].concat('<li>Niki Vazou: ' + showcode(2,"https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem2/niki.hs", "Haskell") + '</li>');
+submissions[2] = submissions[2].concat('<li>Zack Grannan: ' + showcode(2,"https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem2/grannan.hs", "Haskell") + '</li>');
+
+if (submissions[3] == undefined) {submissions[3] = "";}
+submissions[3] = submissions[3].concat('<li>Alejando Pastoriza: ' + showcode(3,"https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem3/alejando pastoriza.cpp", "C++") + '</li>'
+);
+if (submissions[3] == undefined) {submissions[3] = "";}
+submissions[3] = submissions[3].concat('<li>Margarita: ' + showcode(3,"https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem3/margarita.cpp", " C++") + '</li>'
+);
+if (submissions[3] == undefined) {submissions[3] = "";}
+submissions[3] = submissions[3].concat('<li>Mohamed Moanis: ' + showcode(3,"https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem3/MohamedMoanis.cc", "C++") + '</li>'
+);
+if (submissions[3] == undefined) {submissions[3] = "";}
+submissions[3] = submissions[3].concat('<li>Cesar: ' + showcode(3,"https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem3/Cesar.ml", "OCaml") + '</li>'
+);
+if (submissions[3] == undefined) {submissions[3] = "";}
+submissions[3] = submissions[3].concat('<li>Palandjian: ' + showcode(3,"https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem3/Palandjian.py", "Python") + '</li>'
+);
+if (submissions[3] == undefined) {submissions[3] = "";}
+submissions[3] = submissions[3].concat('<li>Ignacio Cascudo: ' + showcode(3,"https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem3/Ignacio.py", "Python") + '</li>'
+);
 if (submissions[3] == undefined) {submissions[3] = "";}
 submissions[3] = submissions[3].concat('<li>Alejandro Aguirre: ' + showcode(3,"https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem3/Alejandro Aguirre.cpp", "C++") + '</li>'
 );

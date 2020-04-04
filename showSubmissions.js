@@ -13,7 +13,6 @@ function loadSubmissions() {
  function showcode(i,filename,language){
     if (i < currentSubmission) {
         var tmp = ('<a target="_blank" href="' + filename + '>' + language +'</a>');
-        console.log("tmp = " + tmp);
         return '<a target="_blank" href="' + filename + '">' + language +  '</a>'; 
      }
      else {

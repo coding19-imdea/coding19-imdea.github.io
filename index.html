@@ -20,6 +20,17 @@
   outline: none;
   font-size: 15px;
 }
+.solution {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 9px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
 
 .active, .collapsible:hover {
   background-color: #555;
@@ -90,7 +101,7 @@ The next morning at 12:00h CET we declare three winners (the first three that go
      Description
     </th>
     <th>
-      Response Form
+      Solution
     </th>
     <th>
      Submissions
@@ -112,10 +123,8 @@ The next morning at 12:00h CET we declare three winners (the first three that go
       Quadratic primes
      </a>
     </td>
-    <td>
-      <a href="https://forms.gle/UGfwVADXZy6Pdx6u9" target="_blank">
-        Submit
-       </a>
+     <td>
+      <div id="solution0" value="-59231"></div>
      </td>
      <td>
      <button class="collapsible" type="button">
@@ -147,10 +156,8 @@ The next morning at 12:00h CET we declare three winners (the first three that go
      </a>
     </td>
     <td>
-     <a href="https://forms.gle/aq9dkARP8cqG6smx5" target="_blank">
-      Submit
-     </a>
-    </td>
+      <div id="solution1" value="N/A"></div>
+     </td>
     <td>
      <button class="collapsible" type="button">
       Check Submissions
@@ -181,9 +188,7 @@ The next morning at 12:00h CET we declare three winners (the first three that go
      </a>
     </td>
     <td>
-     <a href="https://forms.gle/1WqL2epD9PCZqSLQ9" target="_blank">
-      Submit
-     </a>
+      <div id="solution2" value="73682"></div>
     </td>
     <td>
      <button class="collapsible" type="button">
@@ -212,9 +217,8 @@ The next morning at 12:00h CET we declare three winners (the first three that go
      </a>
     </td>
     <td>
-     <a href="https://forms.gle/qgV1Gc2LTwJvZyL38" target="_blank">
-      Submit
-     </a>
+      <div id="solution3" value="740">
+      </div>
     </td>
     <td>
      <button class="collapsible" type="button">
@@ -246,10 +250,8 @@ The next morning at 12:00h CET we declare three winners (the first three that go
       Password Derivation
      </a>
     </td>
-    <td>
-     <a href="https://forms.gle/WN183ktvGGp5E3cx7" target="_blank">
-      Submit
-     </a>
+    <td>      
+      <div id="solution4" value="73162890"></div>
     </td>
     <td>
      <button class="collapsible" type="button">
@@ -288,9 +290,7 @@ The next morning at 12:00h CET we declare three winners (the first three that go
      </a>
     </td>
     <td>
-     <a href="https://forms.gle/WN183ktvGGp5E3cx7" target="_blank">
-      Submit
-     </a>
+      <div id="solution5" value="N/A"></div>
     </td>
     <td>
      <button class="collapsible" type="button">
@@ -323,9 +323,7 @@ The next morning at 12:00h CET we declare three winners (the first three that go
      </a>
     </td>
     <td>
-     <a href="https://forms.gle/8n1jTaPT9XqMyFeF9" target="_blank">
-      Submit
-     </a>
+      <div id="solution6" value="24702"></div>
     </td>
     <td>
      <button class="collapsible" type="button">
@@ -358,9 +356,7 @@ The next morning at 12:00h CET we declare three winners (the first three that go
      </a>
     </td>
     <td>
-     <a href="https://forms.gle/8n1jTaPT9XqMyFeF9" target="_blank">
-      Submit
-     </a>
+      <div id="solution7" value="608720"></div>
     </td>
     <td>
      <button class="collapsible" type="button">
@@ -393,9 +389,7 @@ The next morning at 12:00h CET we declare three winners (the first three that go
      </a>
     </td>
     <td>
-     <a href="https://forms.gle/8n1jTaPT9XqMyFeF9" target="_blank">
-      Submit
-     </a>
+      <div id="solution8" value="0.001887854841"></div>
     </td>
     <td>
      <button class="collapsible" type="button">
@@ -430,10 +424,8 @@ The next morning at 12:00h CET we declare three winners (the first three that go
       Input
      </a>
     </td>
-    <td>
-     <a href="https://forms.gle/8n1jTaPT9XqMyFeF9" target="_blank">
-      Submit
-     </a>
+    <td>      
+      <div id="solution9" value="N/A"></div>
     </td>
     <td>
      <button class="collapsible" type="button">
@@ -466,9 +458,11 @@ The next morning at 12:00h CET we declare three winners (the first three that go
      </a>
     </td>
     <td>
-     <a href="https://forms.gle/8n1jTaPT9XqMyFeF9" target="_blank">
-      Submit
-     </a>
+      <div id="solution10" value="193193965">
+       <a href="https://forms.gle/8n1jTaPT9XqMyFeF9" target="_blank">
+        Submit
+       </a>
+    </div>
     </td>
     <td>
      <button class="collapsible" type="button">
@@ -527,7 +521,28 @@ your suggestion complies with the source's copyright regulations.
  Of course, there is the coding19 channel at IMDEA Software Mattermost.
 </p>
 <script>
- var coll = document.getElementsByClassName("collapsible");
+function makehtmlsolution(i, sol){
+    var content = '<button class="solution" type="button" onclick="revealSolution(';
+    content = content.concat(i);
+    content = content.concat(', \'');
+    content = content.concat(sol);
+    content = content.concat('\')"> Reveal Solution</button>');
+    return content;
+}
+
+function revealSolution(i,sol) {
+    var elem = "solution".concat(i.toString());
+    document.getElementById(elem).innerHTML = sol;
+}
+
+for (i = 0; i < currentSubmission; i++) {
+  var elem = document.getElementById("solution".concat(i.toString()));
+  var sol  = elem.getAttribute('value');
+  var content = makehtmlsolution(i,sol);
+  elem.innerHTML = content;
+}
+
+var coll = document.getElementsByClassName("collapsible");
 var i;
 
 for (i = 0; i < coll.length; i++) {

@@ -31,7 +31,7 @@ def get_deadline_strs():
     # deadline is tomorrow if it's not Friday, else Monday
     delta = 1 if not isTodayFriday else 3
     deadlineDate = todayDate + datetime.timedelta(days=delta)
-    return (deadlineDate.strftime("%Y%m%d") + "T12", "12:00 CET, " + deadlineDate.strftime("%d/%m/%d"))
+    return (deadlineDate.strftime("%Y%m%d") + "T12", "12:00 CET, " + deadlineDate.strftime("%d/%m/%Y"))
 
 def getUpdatedHtmlStr(probName, probURL,probSol):
     html_doc = open('index.html').read()

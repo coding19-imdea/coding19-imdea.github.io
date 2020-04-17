@@ -27,7 +27,7 @@ def get_tr_str(probName, probURL, probSol, curSubmNum, deadlineStrLnk, deadlineS
 
 def get_deadline_strs():
     todayDate = datetime.date.today()
-    isTodayFriday = todayDate.weekday == 4 # 0 = Monday, 1 = Tuesday, etc.
+    isTodayFriday = todayDate.weekday() == 4 # 0 = Monday, 1 = Tuesday, etc.
     # deadline is tomorrow if it's not Friday, else Monday
     delta = 1 if not isTodayFriday else 3
     deadlineDate = todayDate + datetime.timedelta(days=delta)

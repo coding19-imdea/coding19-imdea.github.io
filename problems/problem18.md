@@ -6,7 +6,7 @@ The goal of this (and maybe some of the following tasks) would be to have fun wi
 
 ## Task
 The task for this week is fairly simple. It consists of two parts.
-- **Create an interpreter for a subset of Lisp at your choice**. At the very least you should be able to correctly interpret the first program in the example below. (Which Lisp? The one described in first chapters of [this book](https://leanpub.com/progalgs/read))
+- **Create an interpreter for a subset of Lisp of your choice**. At the very least you should be able to correctly interpret the first program in the example below. (Which Lisp? The one described in first chapters of [this book](https://leanpub.com/progalgs/read))
 - [optional, but recommended] **Visualize the Abstract Syntax Tree of Lisp programs** (in pdf, html or whatever). You do not need to write your own graphical library, but do not use a library that already plots ASTs (it's fine to use a library that plots graphs and such).
 
 We will look at the program by hand; no automatic solution check. Write a small documentation on how to run and use them. The shorter and more elegant your code the better. 
@@ -27,7 +27,7 @@ Try and interpret this program.
     (* N (factorial (- N 1)))))
 ```
 
-If possible, let your interpreter be able to run this other program:
+Optionally, try and make your interpreter be able to run this other program:
 ```
 (defun insertion-sort (vec comp)
   (dotimes (i (1- (length vec)))

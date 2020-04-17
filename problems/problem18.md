@@ -25,16 +25,19 @@ Try and interpret this program.
   (if (= N 1)
       1
     (* N (factorial (- N 1)))))
+
+(factorial 5)
 ```
 
 Optionally, try and make your interpreter be able to run this other program:
 ```
-(defun insertion-sort (vec comp)
-  (dotimes (i (1- (length vec)))
-    (do ((j i (1- j)))
-        ((minusp j))
-      (if (call comp (aref vec (1+ j)) (aref vec j))
-          (rotatef (aref vec (1+ j)) (aref vec j))
-          (return))))
-  vec)
+(defun map-vec (fn vec)
+  "Map function FN over each element of VEC
+   and return the new vector with the results."
+  (let ((rez (make-array (length vec))))
+    (dotimes (i (length vec))
+      (:= (aref rez i) (call fn (aref vec i))))
+    rez))
+
+(map-vec '1+ #(1 2 3))
 ```

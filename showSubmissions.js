@@ -241,3 +241,6 @@ submissions[19] = submissions[19].concat('<li>Ignacio Cascudo: ' + showcode(19,"
 if (submissions[20] == undefined) {submissions[20] = "";}
 submissions[20] = submissions[20].concat('<li>Margarita: ' + showcode(20,"https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem20/Margarita.cpp", "C++") + '</li>'
 );
+if (submissions[20] == undefined) {submissions[20] = "";}
+submissions[20] = submissions[20].concat('<li>Ale Naser Pastoriza: ' + showcode(20,"https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem20/Ale Naser Pastoriza.cpp", "C++") + '</li>'
+);

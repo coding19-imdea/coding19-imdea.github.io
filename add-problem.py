@@ -29,7 +29,7 @@ def get_deadline_strs():
     todayDate = datetime.date.today()
     isTodayFriday = todayDate.weekday() == 4 # 0 = Monday, 1 = Tuesday, etc.
     # deadline is tomorrow if it's not Friday, else Monday
-    delta = 1 if not isTodayFriday else 3
+    delta = 2 if not isTodayFriday else 3 # Deadline is two days unless it's Friday
     deadlineDate = todayDate + datetime.timedelta(days=delta)
     return (deadlineDate.strftime("%Y%m%d") + "T12", "12:00 CET, " + deadlineDate.strftime("%d/%m/%Y"))
 

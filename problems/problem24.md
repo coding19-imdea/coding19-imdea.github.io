@@ -9,9 +9,9 @@ Write a program that can read [abc](http://abcnotation.com/blog/2010/01/31/how-t
 
 There are many MIDI libraries available. The amount of required musical background can be learned within an hour. 
 
-Lockdown-style challenge: Generate your own abc theme and use the coding19 channel to challenge (a specific or all the participants) to convert it to music! 
+**Lockdown-style challenge:** Generate your own abc theme and use the coding19 channel to challenge (a specific or all the participants) to convert it to music! 
 
-Additional challenge: If you are using a statically typed programming language: can you use typing rules to enforce patterns such as metrics, e.g. that the total length count in a bar corresponds to the required meter?
+**Additional challenge:** If you are using a statically typed programming language: can you use typing rules to enforce patterns such as metrics, e.g. that the total length count in a bar corresponds to the required meter?
 
 Can you play Paddy O'Rafferty?
 

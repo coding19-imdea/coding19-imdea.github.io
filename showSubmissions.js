@@ -253,3 +253,6 @@ submissions[21] = submissions[21].concat('<li>Ignacio Cascudo: ' + showcode(21,"
 if (submissions[23] == undefined) {submissions[23] = "";}
 submissions[23] = submissions[23].concat('<li>Cesar: ' + showcode(23,"https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem23/Cesar.ml", "ocaml") + '</li>'
 );
+if (submissions[23] == undefined) {submissions[23] = "";}
+submissions[23] = submissions[23].concat('<li>Margarita: ' + showcode(23,"https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem23/Margarita.cpp", "C++") + '</li>'
+);

@@ -5,7 +5,7 @@ Remember [problem 21](./problem21) and how it could have been a hard-core hackin
 
 ## The Problem
 
-Write a program that can read the [abc](abcnotation.com/blog/2010/01/31/how-to-understand-abc-the-basics/), the musical notation language, and can play it. Submit your code on the coding19 channel together with a quick screencast of what it can do.
+Write a program that can read the [abc](http://abcnotation.com/blog/2010/01/31/how-to-understand-abc-the-basics/), the musical notation language, and can play it. Submit your code on the coding19 channel together with a quick screencast of what it can do.
 
 There are many MIDI libraries available. The amount of required musical background can be learned within an hour. 
 

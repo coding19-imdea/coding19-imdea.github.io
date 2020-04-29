@@ -1067,7 +1067,7 @@ function revealSolution(i,sol) {
     document.getElementById(elem).innerHTML = sol;
 }
 
-for (i = 0; i < currentSubmission; i++) {
+for (i = 0; i < currentSubmission-1; i++) {
   var elem = document.getElementById("solution".concat(i.toString()));
   var sol  = elem.getAttribute('value');
   var content = makehtmlsolution(i,sol);

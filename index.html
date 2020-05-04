@@ -3,7 +3,7 @@
  <head>
   <meta content="width=device-width, initial-scale=1" name="viewport"/>
   <script>
-   var currentSubmission = 23
+   var currentSubmission = 25
   </script>
   <!-- NB: This line to be changed to add a problem -->
   <script src="showSubmissions.js">
@@ -107,6 +107,43 @@ The next morning at 12:00h CET we declare three winners (the first three that go
      Submissions
     </th>
    </tr>
+   <!--Start Problem 25: Triangle containment-->
+   <tr>
+    <td>
+     25
+    </td>
+    <!-- NB: Problem counter here -->
+    <td>
+     <a href="https://www.timeanddate.com/countdown/generic?iso=20200506T12&amp;p0=141&amp;font=cursive" target="_blank">
+      12:00 CET, 06/05/2020
+     </a>
+    </td>
+    <td>
+     <a href="https://projecteuler.net/problem=102" target="_blank">
+      Triangle containment
+     </a>
+    </td>
+    <td>
+     <div id="solution25" value="228">
+      <a href="https://forms.gle/8n1jTaPT9XqMyFeF9" target="_blank">
+       Submit
+      </a>
+     </div>
+    </td>
+    <td>
+     <button class="collapsible" type="button">
+      Check Submissions
+     </button>
+     <div class="content">
+      <p>
+       <ol>
+        <div id="submissions25">
+        </div>
+       </ol>
+      </p>
+     </div>
+    </td>
+   </tr>
    <!--Start Problem 24: Totient maximum-->
    <tr>
     <td>
@@ -124,15 +161,25 @@ The next morning at 12:00h CET we declare three winners (the first three that go
      </a>
     </td>
     <td>
-     <div >
-       N/A
-     </div>
+      <div id="solution24" value="N/A">
+        <a href="https://forms.gle/8n1jTaPT9XqMyFeF9" target="_blank">
+         Submit
+        </a>
+       </div>
     </td>
     <td>
-      <div >
-        N/A
-      </div>
-     </td>
+      <button class="collapsible" type="button">
+        Check Submissions
+       </button>
+       <div class="content">
+        <p>
+         <ol>
+          <div id="submissions24">
+          </div>
+         </ol>
+        </p>
+       </div>
+    </td>
    </tr>
    <!--Start Problem 23: Totient maximum-->
    <tr>
@@ -1067,7 +1114,7 @@ function revealSolution(i,sol) {
     document.getElementById(elem).innerHTML = sol;
 }
 
-for (i = 0; i < currentSubmission-1; i++) {
+for (i = 0; i < currentSubmission; i++) {
   var elem = document.getElementById("solution".concat(i.toString()));
   var sol  = elem.getAttribute('value');
   var content = makehtmlsolution(i,sol);

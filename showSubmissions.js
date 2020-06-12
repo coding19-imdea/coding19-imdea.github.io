@@ -312,3 +312,6 @@ submissions[36] = submissions[36].concat('<li>Cesar: ' + showcode(36,"https://ra
 if (submissions[36] == undefined) {submissions[36] = "";}
 submissions[36] = submissions[36].concat('<li>Margarita: ' + showcode(36,"https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem36/Margarita.cpp", "C++") + '</li>'
 );
+if (submissions[37] == undefined) {submissions[37] = "";}
+submissions[37] = submissions[37].concat('<li>margarita: ' + showcode(37,"https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem37/margarita.cpp", "c++") + '</li>'
+);

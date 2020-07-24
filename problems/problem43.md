@@ -4,11 +4,11 @@ Intuitive Language
 
 Sometimes it is hard to read the code written in the language you are not familiar with, not unless its written in Intuitive Language. Here's the sample of a program.
 
-    A is 15.  
-    Sum is function of 2: 1, 1, 0.  
-    Inc is function of 1: 1, 1.  
-    I is 1.  
-    F1 is 1.  
+    A is 15.
+    Sum is function of 2: 1, 1, 0.
+    Inc is function of 1: 1, 1.
+    I is 1.
+    F1 is 1. 
 
     do {10} assign I*F1 to F1 AND Inc[I] to I!  
     what is I AND F1?  
@@ -50,7 +50,7 @@ Simpler, optional, way to declare a function with no parameter is:
 Notes:
 1. Declaration ends with a dot, (`.`) .
 2. You can declare a function, with one or more parameters, only one time.
-3. It's guaranteed that function declaration will not contain any function calls, i.e., there will be no coefficient ki which contains a function call.
+3. It's guaranteed that function declaration will not contain any function calls, i.e., there will be no coefficient `ki` which contains a function call.
 4. A function with 0 parameter will be considered as a variable. It can be reassigned multiple times.
 
 Examples
@@ -148,7 +148,7 @@ New coefficients will be 2 and 34. Calling `Sum[20][10]` will result into `3*20 
 
 Notes:
 1. All numbers are rational integers, represented like `a / b` (or just `a` if `b=1`). Here `b` is a positive integer, `a` is any integer. Greatest common divisor for `a` and `b` should be 1.
-2. Variable consists of 1 or more letters followed by 0 or more digits; Key words (`is`, `of`, `assign`, `what`, `function`, `do`, `and`, `to`) are not allowed as variable names.
+2. Variable consists of 1 or more letters followed by `_` or 0 or more digits; Key words (`is`, `of`, `assign`, `what`, `function`, `do`, `and`, `to`) are not allowed as variable names.
 3. Language is case insensitive. Variable name, function name and keywords are all case insensitive.
 4. The coefficients of functions are guaranteed to be expressions without variables.
 5. It is guaranteed that function call will occur only after it's definition.
@@ -160,17 +160,17 @@ Constraints:
 3. All given numbers will be between -100 and 100.
 4. Resulting numerator / denominator will not exceed 109 by absolute value.
 5. Functions will have no more than 5 parameters.
-6. Function name will contain no more than 20 characters.
-7. ach loop will have no more than 1000 iterations.
+6. Function name will contain no more than 50 characters.
+7. Each loop will have no more than 1000 iterations.
 
 Problem
 -------
 
-    A is 2/6. 
-    b is function of 2: -3, 7/4, 38/1.  
-    I is 1.  
+    A is 2/6.
+    b is function of 2: -3, 7/4, 38/1.
+    I is 1.
 
-    do {b[-2][4]-A*30} assign I+1 to I and I-1 to I and I+1 to I!  
+    do {b[-2][4]-A*30} assign I+1 to I and I-1 to I and I+1 to I!
 
     what is I?
     

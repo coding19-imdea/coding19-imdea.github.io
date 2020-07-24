@@ -47,7 +47,7 @@ Simpler, optional, way to declare a function with no parameter is:
 
     %Variable% is %Expression%.
 
-Note:
+Notes:
 1. Declaration ends with a dot, (`.`) .
 2. You can declare a function, with one or more parameters, only one time.
 3. It's guaranteed that function declaration will not contain any function calls, i.e., there will be no coefficient ki which contains a function call.
@@ -74,7 +74,7 @@ How to assign value to variable?
 
 This means that the value of `Variablei` will be `Expressioni`.
 
-Note:
+Notes:
 1. Multiple assignments go left-to-right.
 2. Assignment ends with an exclamation sign, (`!`).
 3. You can assign values to a variable multiple times.
@@ -117,9 +117,9 @@ Function call:
 
 `Expressioni` will be the ith parameter, `%i`, in function declaration. If all `n` parameters are provided: the result of function call will be a value. Otherwise: it will result into another function which takes remaining parameters.
 
-Note:
+Notes:
 1. You have print coefficients, comma and space separated, as output in a line. 
-2. Question ends with '?'.
+2. Question ends with `?`.
 
 Examples
 
@@ -147,25 +147,13 @@ So, `Sum[10] (a = 10)` will result into another function
 New coefficients will be 2 and 34. Calling `Sum[20][10]` will result into `3*20 + 2*10 + 4 = 84`.
 
 Notes:
-
 1. All numbers are rational integers, represented like `a / b` (or just `a` if `b=1`). Here `b` is a positive integer, `a` is any integer. Greatest common divisor for `a` and `b` should be 1.
-2. ```- Number: n, where n is any integer number
-   - PNumber: n, where n > 0
-   - Value: Number | Number / PNumber | FValue
-   - FValue: Calling function of n with all n parameters
-   - OPa: + | -
-   - OPb: * | /
-   - Expression: Term [OPa Term1 ...]
-   - Term: Fact [OPb Fact1 ...]
-   - Fact: Value | (Expression)
-   - Letter: 'A'..'Z' | 'a'..'z'
-   - OPb > OPa```
-3. Variable consists of 1 or more letters followed by 0 or more digits; Key words (`is`, `of`, `assign`, `what`, `function`, `do`, `and`, `to`) are not allowed as variable names.
-4. Language is case insensitive. Variable name, function name and keywords are all case insensitive.
-5. The coefficients of functions are guaranteed to be expressions without variables.
-6. It is guaranteed that function call will occur only after it's definition.
-7. Whitespace between tokens should be ignored.
-8. All operators follows left associativity.
+2. Variable consists of 1 or more letters followed by 0 or more digits; Key words (`is`, `of`, `assign`, `what`, `function`, `do`, `and`, `to`) are not allowed as variable names.
+3. Language is case insensitive. Variable name, function name and keywords are all case insensitive.
+4. The coefficients of functions are guaranteed to be expressions without variables.
+5. It is guaranteed that function call will occur only after it's definition.
+6. Whitespace between tokens should be ignored.
+7. All operators follows left associativity.
 
 Constraints:
 1. It's guaranteed that function declaration will not contain function calls.

@@ -13,7 +13,7 @@ def get_tr_str(probName, probURL, probSol, curSubmNum, deadlineStrLnk, deadlineS
         <td>{curSubmNum}</td> <!-- NB: Problem counter here -->
         <td><a href="https://www.timeanddate.com/countdown/generic?iso={deadlineStrLnk}&amp;p0=141&amp;font=cursive" target="_blank">{deadlineStrUser}</a></td>
         <td><a href="{probURL}" target="_blank">{probName}</a></td>
-        <td><div id="solution{curSubmNum}" value="{probSol}"><a href="https://forms.gle/8n1jTaPT9XqMyFeF9" target="_blank">Submit</a></div></td>
+        <td><div id="solution{curSubmNum}" value="{probSol}"><a href="https://forms.gle/4H96mwVDmHL6CVvE7" target="_blank">Submit</a></div></td>
         <td>
         <button class="collapsible" type="button">Check Submissions</button>
         <div class="content">

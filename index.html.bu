@@ -43,29 +43,29 @@
   background-color: #f1f1f1;
 }
 h2 {
-  font-family: Palatino,Palatino Linotype,Palatino LT STD,Book Antiqua,Georgia,serif; 
+  font-family: Palatino,Palatino Linotype,Palatino LT STD,Book Antiqua,Georgia,serif;
 }
 
 h3 {
-  font-family: Palatino,Palatino Linotype,Palatino LT STD,Book Antiqua,Georgia,serif; 
+  font-family: Palatino,Palatino Linotype,Palatino LT STD,Book Antiqua,Georgia,serif;
 }
 
 h4 {
-  font-family: Palatino,Palatino Linotype,Palatino LT STD,Book Antiqua,Georgia,serif; 
+  font-family: Palatino,Palatino Linotype,Palatino LT STD,Book Antiqua,Georgia,serif;
 }
 
 
 p {
-  font-family: Palatino,Palatino Linotype,Palatino LT STD,Book Antiqua,Georgia,serif; 
+  font-family: Palatino,Palatino Linotype,Palatino LT STD,Book Antiqua,Georgia,serif;
 }
 
 table {
-  font-family: Palatino,Palatino Linotype,Palatino LT STD,Book Antiqua,Georgia,serif; 
+  font-family: Palatino,Palatino Linotype,Palatino LT STD,Book Antiqua,Georgia,serif;
   border-collapse: collapse;
 }
 
 td, th {
-  font-family: Palatino,Palatino Linotype,Palatino LT STD,Book Antiqua,Georgia,serif; 
+  font-family: Palatino,Palatino Linotype,Palatino LT STD,Book Antiqua,Georgia,serif;
   border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;
@@ -250,7 +250,7 @@ The next morning at 12:00h CET we declare three winners (the first three that go
       Password Derivation
      </a>
     </td>
-    <td>      
+    <td>
       <div id="solution4" value="73162890"></div>
     </td>
     <td>
@@ -424,7 +424,7 @@ The next morning at 12:00h CET we declare three winners (the first three that go
       Input
      </a>
     </td>
-    <td>      
+    <td>
       <div id="solution9" value="N/A"></div>
     </td>
     <td>
@@ -459,7 +459,7 @@ The next morning at 12:00h CET we declare three winners (the first three that go
     </td>
     <td>
       <div id="solution10" value="193193965">
-       <a href="https://forms.gle/8n1jTaPT9XqMyFeF9" target="_blank">
+       <a href="https://forms.gle/4H96mwVDmHL6CVvE7" target="_blank">
         Submit
        </a>
     </div>
@@ -492,8 +492,8 @@ The next morning at 12:00h CET we declare three winners (the first three that go
  <a href="https://forms.gle/sYA5wA2FQS7T29C2A" target="_blank">
   google form
  </a>
- to suggest a new problem. 
-Just make sure that if you copied or edited the problem from a different source, 
+ to suggest a new problem.
+Just make sure that if you copied or edited the problem from a different source,
 your suggestion complies with the source's copyright regulations.
 </p>
 <h4>

@@ -305,6 +305,12 @@ submissions[34] = submissions[34].concat('<li>Margarita: ' + showcode(34,"https:
 submissions[29]="";
 submissions[32]="";
 submissions[35]="";
+submissions[38]="";
+submissions[40]="";
+submissions[42]="";
+submissions[43]="";
+submissions[44]="";
+
 if (submissions[36] == undefined) {submissions[36] = "";}
 submissions[36] = submissions[36].concat('<li>Cesar: ' + showcode(36,"https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem36/Cesar.ml", "ocaml") + '</li>'
                                         );

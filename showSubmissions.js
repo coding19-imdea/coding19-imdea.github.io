@@ -305,11 +305,6 @@ submissions[34] = submissions[34].concat('<li>Margarita: ' + showcode(34,"https:
 submissions[29]="";
 submissions[32]="";
 submissions[35]="";
-submissions[38]="";
-submissions[40]="";
-submissions[42]="";
-submissions[43]="";
-submissions[44]="";
 
 if (submissions[36] == undefined) {submissions[36] = "";}
 submissions[36] = submissions[36].concat('<li>Cesar: ' + showcode(36,"https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem36/Cesar.ml", "ocaml") + '</li>'
@@ -335,6 +330,13 @@ submissions[41] = submissions[41].concat('<li>Cesar: ' + showcode(41,"https://ra
 if (submissions[41] == undefined) {submissions[41] = "";}
 submissions[41] = submissions[41].concat('<li>Margarita: ' + showcode(41,"https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem41/Margarita.cpp", "C++") + '</li>'
                                         );
+
+submissions[38]="";
+submissions[40]="";
+submissions[42]="";
+submissions[43]="";
+submissions[44]="";
+
 if (submissions[45] == undefined) {submissions[45] = "";}
 submissions[45] = submissions[45].concat('<li>Lisa: ' + showcode(45,"https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem45/Lisa.cpp", "C++") + '</li>'
 );

@@ -3,7 +3,7 @@
  <head>
   <meta content="width=device-width, initial-scale=1" name="viewport"/>
   <script>
-   var currentSubmission = 45
+   var currentSubmission = 46
   </script>
   <!-- NB: This line to be changed to add a problem -->
   <script src="showSubmissions.js">
@@ -105,6 +105,43 @@ you solve it through your favorite programming language and submit the solution.
     <th>
      Submissions
     </th>
+   </tr>
+   <!--Start Problem 46: Little Girl and Maximum XOR-->
+   <tr>
+    <td>
+     46
+    </td>
+    <!-- NB: Problem counter here -->
+    <td>
+     <a href="https://www.timeanddate.com/countdown/generic?iso=20211129T12&amp;p0=141&amp;font=cursive" target="_blank">
+      12:00 CET, 29/11/2021
+     </a>
+    </td>
+    <td>
+     <a href="https://codeforces.com/contest/276/problem/D" target="_blank">
+      Little Girl and Maximum XOR
+     </a>
+    </td>
+    <td>
+     <div id="solution46" value="1152921504606846975">
+      <a href="https://forms.gle/4H96mwVDmHL6CVvE7" target="_blank">
+       Submit
+      </a>
+     </div>
+    </td>
+    <td>
+     <button class="collapsible" type="button">
+      Check Submissions
+     </button>
+     <div class="content">
+      <p>
+       <ol>
+        <div id="submissions46">
+        </div>
+       </ol>
+      </p>
+     </div>
+    </td>
    </tr>
    <!--Start Problem 45: Number of Simple Paths-->
    <tr>

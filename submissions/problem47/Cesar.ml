@@ -16,7 +16,7 @@ let solveone () =
     if (gt next_power d) then (calc sol (add d one)     power)
     else aux next_power  (calc sol (next_power) power)
   in
-  if m=1L then one else (sub (aux one one) one)
+  (rem (sub (aux one one) one) m)
 
 let ntimes n f =
   let rec onemore k = if k=0 then () else f () ; onemore (k-1) in

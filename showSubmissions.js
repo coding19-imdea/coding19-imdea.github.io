@@ -388,3 +388,6 @@ submissions[46] = submissions[46].concat('<li>Ale: ' + showcode(46,"https://raw.
 if (submissions[47] == undefined) {submissions[47] = "";}
 submissions[47] = submissions[47].concat('<li>Cesar: ' + showcode(47,"https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem47/Cesar.ml", "ocaml") + '</li>'
 );
+if (submissions[47] == undefined) {submissions[47] = "";}
+submissions[47] = submissions[47].concat('<li>Louis-Marie DANDO: ' + showcode(47,"https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem47/Louis-Marie DANDO.spl", "Shakespear Programming Language") + '</li>'
+);

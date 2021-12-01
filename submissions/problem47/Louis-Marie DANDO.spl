@@ -1,0 +1,171 @@
+			A Midsummer Night's Dreamoon.
+
+Duncan, an old king whose value is d.
+Macbeth, a captain whose value m will serve for modulo.
+Cordelia, Duncan's daughter, inheriting his value, but only to destroy it, as some children do.
+Stephano, a drunk holding much.
+Imogen, an increment with the power of twos.
+Prospero, a powerful magician.
+Lady Macbeth, a newline character.
+
+
+     	      Act I: The initialisation of our characters.
+
+
+      Scene I: This is just a comment, since I don't know any other way to do them;
+The idea is to remark that in the array a, for reasons that I wil not detail here,
+you must not take two numbers whose lenght in binary is the same, Hence this computation;
+Note also that only d will be asked on the input since my SPL interpreter bugs when asked for more;
+This language is a student's joke after all;
+Also, Prospero will do nothing in this scene, but it will also happen elsewhere, due to the weird goto specs,
+therefore get used to it.
+
+[Enter Prospero]
+
+
+      Scene II: The value of Duncan.
+[Enter Duncan]
+
+Prospero: Listen to your heart.
+
+[Exit Duncan]
+
+
+      Scene II: The value of Macbeth.
+[Enter Macbeth]
+
+Macbeth: You are an amazing beautiful Heaven.
+Prospero: You are myself.
+Macbeth: You are the product of yourself and a blossoming King.
+Prospero: You are the sum of myself and yourself.
+Macbeth: You are the product of yourself and a blossoming King.
+Prospero: You are the sum of myself and yourself.
+Macbeth: You are the product of yourself and a bold brave charming clearest cunning Lord.
+Prospero: You are the sum of myself and yourself.
+Macbeth: You are the product of yourself and a cute delicious embroidered angel.
+Prospero: You are the sum of myself and yourself.
+Macbeth: You are the product of yourself and a fair fine flower.
+Prospero: You are the sum of myself and yourself.
+Macbeth: You are the product of yourself and a fair fine flower.
+Prospero: You are the sum of myself and yourself.
+Macbeth: You are the product of yourself and a gentle golden good handsome happiness.
+Prospero: You are the sum of myself and yourself.
+Macbeth: You are the product of yourself and a fair fine flower.
+Prospero: You are the sum of myself and yourself.
+Macbeth: You are the product of yourself and a gentle golden good handsome happiness.
+Prospero: You are the sum of myself and yourself.
+Macbeth: You are the product of yourself and a fair fine flower.
+Prospero: You are the sum of myself and yourself.
+
+[Exeunt]
+
+      Scene III: Duncan's heir.
+[Enter Duncan and Cordelia]
+
+Duncan: You are myself.
+
+[Exeunt]
+
+
+      Scene IV: Stephano and Imogen.
+[Enter Stephano and Imogen]
+
+Stephano: You are joy.
+Imogen: You are plum.
+
+[Exeunt]
+
+
+
+
+		Act II: The main computation.
+
+
+      Scene I: Exit.
+[Exeunt]
+
+
+      Scene II: Cordelia is put to the test.
+[Enter Prospero and Cordelia]
+
+Prospero: Are you better than a summer's day?
+Cordelia: If not, let us proceed to Scene VI.
+
+[Exeunt]
+
+
+      Scene III: Stephano and Imogen dialogue.
+[Enter Stephano and Imogen]
+
+Imogen: You are the product of yourself and the sum of myself and a hero.
+Stephano: You are the product of yourself and a happy rose.
+
+[Exeunt]
+
+
+      Scene IV: Cordelia is a half-wit.
+[Enter Prospero and Cordelia]
+
+Prospero: You are the quotient between yourself and a healthy kingdom.
+
+[Exeunt]
+
+
+      Scene V: Moduling.
+[Enter Stephano and Macbeth]
+
+Macbeth: You are the remainder of the quotient between you and me. Let us proceed to Scene I.
+
+
+      Scene VI: Stop this farce.
+[Exeunt]    
+
+
+
+
+		Act III: Final computation.
+
+
+      Scene I: Cordelia  is renewed.
+[Enter Duncan and Cordelia]
+
+Duncan: You are the sum of myself and a honest pony.
+
+[Exit Duncan]
+
+
+      Scene II: Imogen is a bad influence.
+
+[Enter Imogen]
+
+Imogen: You are the difference between yourself and myself.
+
+[Exit Imogen]
+
+
+      Scene III: In vino veritas.
+[Enter Stephano]
+
+Cordelia: You are the sum of the product of myself and yourself and  Microsoft. 
+
+[Exeunt]
+
+
+      Scene IV: Moduling.
+[Enter Stephano and Macbeth]
+
+Macbeth: You are the remainder of the quotient between you and me. Open your heart.
+
+[Exeunt]
+
+
+      Scene V: Tidying up.
+[Enter Lady Macbeth and Prospero]
+
+Prospero: You are as fair as the sum of a sweet warm lovely summer's day and a charming angel.
+	  Speak your mind.
+
+[Exeunt]
+
+
+

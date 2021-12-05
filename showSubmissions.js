@@ -400,3 +400,6 @@ submissions[47] = submissions[47].concat('<li>Lisa: ' + showcode(47,"https://raw
 if (submissions[47] == undefined) {submissions[47] = "";}
 submissions[47] = submissions[47].concat('<li>Niki: ' + showcode(47,"https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem47/Niki.rs", "Rust") + '</li>'
 );
+if (submissions[47] == undefined) {submissions[47] = "";}
+submissions[47] = submissions[47].concat('<li>Fedor: ' + showcode(47,"https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem47/Fedor.go", "go") + '</li>'
+);

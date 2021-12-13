@@ -424,3 +424,6 @@ submissions[48] = submissions[48].concat('<li>Martin: ' + showcode(48,"https://r
 if (submissions[48] == undefined) {submissions[48] = "";}
 submissions[48] = submissions[48].concat('<li>Ale: ' + showcode(48,"https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem48/Ale.cpp", "c++") + '</li>'
 );
+if (submissions[48] == undefined) {submissions[48] = "";}
+submissions[48] = submissions[48].concat('<li>Marga: ' + showcode(48,"https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem48/Marga.cpp", "C++") + '</li>'
+);

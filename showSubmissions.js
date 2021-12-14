@@ -430,3 +430,6 @@ submissions[48] = submissions[48].concat('<li>Marga: ' + showcode(48,"https://ra
 if (submissions[49] == undefined) {submissions[49] = "";}
 submissions[49] = submissions[49].concat('<li>Cesar: ' + showcode(49,"https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem49/Cesar.ml", "ocaml") + '</li>'
 );
+if (submissions[49] == undefined) {submissions[49] = "";}
+submissions[49] = submissions[49].concat('<li>Martin: ' + showcode(49,"https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem49/Martin.hs", "Haskell") + '</li>'
+);

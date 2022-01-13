@@ -448,3 +448,6 @@ submissions[49] = submissions[49].concat('<li>Louis-Marie: ' + showcode(49,"http
 if (submissions[49] == undefined) {submissions[49] = "";}
 submissions[49] = submissions[49].concat('<li>Ignacio: ' + showcode(49,"https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem49/Ignacio.rs", "Rust") + '</li>'
 );
+if (submissions[49] == undefined) {submissions[49] = "";}
+submissions[49] = submissions[49].concat('<li>marga: ' + showcode(49,"https://raw.githubusercontent.com/coding19-imdea/coding19-imdea.github.io/master/submissions/problem49/marga.cpp", "c++") + '</li>'
+);

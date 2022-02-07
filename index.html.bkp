@@ -3,7 +3,7 @@
  <head>
   <meta content="width=device-width, initial-scale=1" name="viewport"/>
   <script>
-   var currentSubmission = 49
+   var currentSubmission = 50
   </script>
   <!-- NB: This line to be changed to add a problem -->
   <script src="showSubmissions.js">
@@ -105,6 +105,43 @@ you solve it through your favorite programming language and submit the solution.
     <th>
      Submissions
     </th>
+   </tr>
+   <!--Start Problem 50: Up the Strip-->
+   <tr>
+    <td>
+     50
+    </td>
+    <!-- NB: Problem counter here -->
+    <td>
+     <a href="https://www.timeanddate.com/countdown/generic?iso=20220120T12&amp;p0=141&amp;font=cursive" target="_blank">
+      12:00 CET, 20/01/2022
+     </a>
+    </td>
+    <td>
+     <a href="https://codeforces.com/contest/1561/problem/D1" target="_blank">
+      Up the Strip
+     </a>
+    </td>
+    <td>
+     <div id="solution50" value="750469605">
+      <a href="https://forms.gle/4H96mwVDmHL6CVvE7" target="_blank">
+       Submit
+      </a>
+     </div>
+    </td>
+    <td>
+     <button class="collapsible" type="button">
+      Check Submissions
+     </button>
+     <div class="content">
+      <p>
+       <ol>
+        <div id="submissions50">
+        </div>
+       </ol>
+      </p>
+     </div>
+    </td>
    </tr>
    <!--Start Problem 49: Just one-->
    <tr>
